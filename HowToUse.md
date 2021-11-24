@@ -1,1 +1,0 @@
-# How to use the Study Framework to setup your own factorial study in Unreal
