@@ -4,7 +4,7 @@
 * Have similar data for different data (facilitating meta analyses and sharing analysis tools)
 * Do **not** overengineer
 
-
+For information on how to use this, go to the [HowToUse-Section](HowToUse)
 
 
 Here helpful information should be gathered.
