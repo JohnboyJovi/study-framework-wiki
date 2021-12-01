@@ -9,4 +9,5 @@
 
 # Feaures
 * Fading
+* Write out run data and last participant in json
 * Start a map and be able to directly debug it
