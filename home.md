@@ -6,6 +6,7 @@
 
 For information on how to use this, go to the [HowToUse-Section](HowToUse)
 
+[What is logged and where?](Logging)
 
 Here helpful information should be gathered.
 
