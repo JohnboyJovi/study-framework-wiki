@@ -1,6 +1,6 @@
 # How to use the Study Framework to setup your own factorial study in Unreal
 
-* First of all get the StudyFramework as Plugin into you project, e.g., using the setup script.
+* First of all get the StudyFramework as Plugin into you project, e.g., using the setup script of the [RWTH VR Project Template](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/unrealprojecttemplate)
 * .. Add SFStudySetup 
 * ... configure phases
 * .. configure maps
