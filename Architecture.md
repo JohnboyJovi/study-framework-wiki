@@ -8,7 +8,6 @@ The classes are in principle divided in those used for setting up and those used
 * ``USFStudyPhase``: A phase has a name and different factors and dependent variables, it can also be used to have a warm-up scene or a nice end/farewill/thank-you scene
 * ``USFStudyFactor``: Represents a factor you want to examine in the study with different levels. It can exists multiple factors. 
   * ``USFMapFactor``: This is a child class representing the level/map that should be shown. At least one ``USFMapFactor``with one level needs to be specified per phase!
-  * :exclamation: move to factor description! :exclamation: ``USFNonCombinedFactor``: This represents a factor which is just used to introduce randomness. In contrast to normal factors it is not combined with the other factors in a n x m x ... design but run in parallel, e.g., to introduce some randomness to repetitions of the same conditions (of the other factors).
 * ``USFDependentVariable``: This represents dependent variables you want to measure per condition (combination of levels of your factors). All values are gathered as strings. No dependent variable is required. Time of each condition is logged anyways always.
 
 ## Study Execution Classes
