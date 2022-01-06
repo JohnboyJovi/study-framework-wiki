@@ -10,6 +10,12 @@ For information on how to use this, go to the [HowToUse-Section](HowToUse)
 
 [What are all these classes?](Architecture)
 
+**Features provided are**
+* Fading between levels/conditions
+* HUD for easier controlling of the study
+* Write out run data and last participant in json
+* Start a map and be able to directly debug it
+
 Here helpful information should be gathered.
 
 [Meeting Minutes](meeting-minutes)
