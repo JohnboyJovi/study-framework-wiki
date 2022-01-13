@@ -13,14 +13,27 @@ Factors define the different conditions you want to examine, e.g., in a 2x2 fact
   * ``SFMapFactor`` specifying which map/maps to use. Exactly one map factor has to be present per phase with at least one level.
   * ``SFStudyFactor`` to specify any other factor you want to examine, giving all the levels as ``FString``, which you then can access during running the study by ``USFGameInstance::Get()->GetFactorLevel(FactorName)``
   * Condition orders etc. can be randomized, see the [randomization](Randomization) page
-* Add (1) dependent variables to the phase\
+* Add dependent variables to the phase(1)\
 ![image](uploads/968ed9a94170b6e1ae84a8b92f6902e9/image.png)\
-Dependent variables represent whatever you want to measure. They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. Whenever you have gathered information for that variable, pass it on to the system with ``USFGameInstance::Get()->GetFactorLevel(FactorName)`` 
-* .. set game instance (Setting -> Project Setting -> Maps&Modes) Set to SFGameInstance
-* .. set game mode (Setting -> Project Setting -> Maps&Modes) Set to SFGameMode
+Dependent variables represent whatever you want to measure. They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. Whenever you have gathered information for that variable, pass it on to the system with ``USFGameInstance::Get()->LogData(DependenVariableName, Value)`` which only takes FString for values, so you have to convert it yourself. These are then logged and stored by the system.
+* This is the required study setup, but there are some more options there to explore.
+* Set game instance (``Settings -> Project Settings -> Maps&Modes``) to ``SFGameInstance``
+* Set game mode (``Settings -> Project Settings -> Maps&Modes``) Set to ``SFGameMode``
 
-:warning: So far only notes!
+# How to execute a study
 
-* Setup with c++ or actor? --> rather only blueprint (and json)
-* Interfacing with USFGameInstance (progressing, getting levels)
-* what factors and randomness exists?
+* Start the main/setup map
+* If the last study run wasn't finished (all conditions with required dependent variables were successfully finished) you get different option to proceed:\
+![image](uploads/238c33e5b17d55c7fe9304f271d784f6/image.png)\
+Choose what uis appropriate 
+* Click ``Start Study`` or call ``USFGameInstance::Get()->StartStudy()``.
+* In general ``USFGameInstance::Get()`` is your central interface to the study framework, so checkout the docu/comment in SFGameInstance.h under ``Control Study``.
+* Proceed through your conditions by clicking the next button or even better automatically calling ``USFGameInstance::Get()->NextCondition()``
+* By clicking ``Show conditions`` you can see what conditions are planned. Green are those already finished and blue is the current one.
+* Checkout what is logged and were: on the [logging](Logging) Wiki page
+
+# How to debug your study
+
+* You can start study maps directly (for debugging) once you have started on the setup map once and the system picks the first condition for the last participant that is situated on the map you started to choose the appropriate factor levels etc.
+
+
