@@ -1,4 +1,4 @@
-There are two different levels of specifying randomization
+There are two different levels where randomization can be applied
 
 # Study Phase
 
