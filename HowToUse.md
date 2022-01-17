@@ -20,6 +20,8 @@ Dependent variables represent whatever you want to measure. They should have a u
 * This is the required study setup, but there are some more options there to explore.
 * Set game instance (``Settings -> Project Settings -> Maps&Modes``) to ``SFGameInstance``
 * Set game mode (``Settings -> Project Settings -> Maps&Modes``) Set to ``SFGameMode``
+* ![image](uploads/ed698d70f2e68dfbc8c895cda36f56a5/image.png)\
+If you want to reorder phases just pull them (1) to another location, since new phases can only be added at the end. (Additionally, you can also rearrange them in the json file while the Editor is closed, it will be reloaded on startup)
 
 # How to execute a study
 
