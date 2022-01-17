@@ -10,7 +10,8 @@ and select ``SFStudyPhase`` instead of ``None`` (phases can be used if some bloc
 * Open the phase's details (1) and give it a recognizable name, then add a factor (2)\
 ![image](uploads/d02708b9b1c4ba267fce27c25ad09564/image.png)\
 Factors define the different conditions you want to examine, e.g., in a 2x2 factorial design you have two factors with two levels each giving 4 conditions in total to examine. There are currently two kinds of factors to chose from:
-  * ``SFMapFactor`` specifying which map/maps to use. Exactly one map factor has to be present per phase with at least one level.
+  * ``SFMapFactor`` specifying which map/maps to use. Exactly one map factor has to be present per phase with at least one level.\
+The names for the levels/maps should be, e.g., ``/Game/Maps/Warmup`` if there is a ``Warmup`` map in a Maps folder in your Content folder.
   * ``SFStudyFactor`` to specify any other factor you want to examine, giving all the levels as ``FString``, which you then can access during running the study by ``USFGameInstance::Get()->GetFactorLevel(FactorName)``
   * Condition orders etc. can be randomized, see the [randomization](Randomization) page
 * Add dependent variables to the phase(1)\
