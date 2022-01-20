@@ -23,6 +23,7 @@ Dependent variables represent whatever you want to measure. They should have a u
 * ![image](uploads/ed698d70f2e68dfbc8c895cda36f56a5/image.png)\
 If you want to reorder phases just pull them (1) to another location, since new phases can only be added at the end. (Additionally, you can also rearrange them in the json file while the Editor is closed, it will be reloaded on startup)
 * Potentially set the mouse to not be captured to use the UI (``Settings --> Project Settings --> Input --> Default Viewport Mouse Capture Mode = No Capture``)
+* To use packages builds, e.g., CAVE, tick ``Settings --> Project Settings -> Packaging --> Cook everything in the project content directory``
 
 # How to execute a study
 
