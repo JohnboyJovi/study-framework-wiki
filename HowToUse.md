@@ -30,7 +30,10 @@ If you want to reorder phases just pull them (1) to another location, since new 
 * Start the main/setup map
 * If the last study run wasn't finished (all conditions with required dependent variables were successfully finished) you get different option to proceed:\
 ![image](uploads/238c33e5b17d55c7fe9304f271d784f6/image.png)\
-Choose what uis appropriate 
+Choose what is appropriate. This is especially helpful if something crashed and you want to continue the study run of a participant
+* If you use the same environment for the study you degugged it in, click:\
+![image](uploads/ce7df26a0703d64e4a4d7cf49713f928/image.png)\
+so that all data generated during debug runs is removed and the study startes with participant ID 0.
 * Click ``Start Study`` or call ``USFGameInstance::Get()->StartStudy()``.
 * In general ``USFGameInstance::Get()`` is your central interface to the study framework, so checkout the docu/comment in SFGameInstance.h under ``Control Study``.
 * Proceed through your conditions by clicking the next button or even better automatically calling ``USFGameInstance::Get()->NextCondition()``
