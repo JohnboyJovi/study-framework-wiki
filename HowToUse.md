@@ -44,7 +44,7 @@ so that all data generated during debug runs is removed and the study startes wi
 
 * You can start study maps directly (for debugging) once you have started on the setup map once and the system picks the first condition for the last participant that is situated on the map you started to choose the appropriate factor levels etc.
 * You can create a bunch of study runs for different participant IDs, to check whether the setup works as expected, use this section in the StudySetup actor: \
-![image](uploads/89a6f2a5c95f1fb5790063484e64c7bd/image.png)\
+![image](uploads/2c3feeae173d0bab1c7863eef9f76592/image.png)\
 Put in the number of runs to generate and click the button, then you can find the ``Participant_[i].json`` files at ``StudyFramework/StudyRuns``
 
 
