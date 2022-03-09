@@ -10,6 +10,8 @@ For information on how to use this, go to the [HowToUse-Section](HowToUse)
 
 [What are all these classes?](Architecture)
 
+[How can I use eye tracking](EyeTracking)
+
 **Features provided are:**
 * Quickly setup a study with factorial design
 * Fading between levels/conditions
