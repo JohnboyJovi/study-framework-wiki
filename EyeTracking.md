@@ -14,8 +14,8 @@ Also in your project you have to have the ``SRanpial`` plugin activated in the .
 # Starting
 
 For any HTC Vive Pro Eye eye tracking to work:
+* Steam (VR) for me needed to be started as admin
 * SR_Runtime needs to be started (as admin)
-* Steam (VR) for me also needed to be started as admin
 * For development potentially also Visual Studio starting Unreal need to be run as admin
 
 If this is not done, eye calibration is not started correctly.
