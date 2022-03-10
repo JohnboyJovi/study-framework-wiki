@@ -10,3 +10,7 @@ Also in your project you have to have the ``SRanpial`` plugin activated in the .
 		}
 	],
 ```
+
+# Starting
+
+As of now you need Admin rights to use eye tracking. Both ``SRanipalRuntime`` and ``Unreal`` have to be started with admin rights (if you use ``Visual Studio`` to start Unreal, just start Visual Studio with admin rights).
