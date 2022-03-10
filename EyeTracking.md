@@ -17,3 +17,7 @@ For any HTC Vive Pro Eye eye tracking to work:
 * SR_Runtime needs to be started (as admin)
 * Steam (VR) for me also needed to be started as admin
 * For development potentially also Visual Studio starting Unreal need to be run as admin
+
+If this is not done, eye calibration is not started correctly.
+
+Some more insights can be found at: [Unreal Eye Tracking Demo Project](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-eye-tracking/-/wikis/home)
