@@ -13,4 +13,7 @@ Also in your project you have to have the ``SRanpial`` plugin activated in the .
 
 # Starting
 
-As of now you need Admin rights to use eye tracking. Both ``SRanipalRuntime`` and ``Unreal`` have to be started with admin rights (if you use ``Visual Studio`` to start Unreal, just start Visual Studio with admin rights).
+For any HTC Vive Pro Eye eye tracking to work:
+* SR_Runtime needs to be started (as admin)
+* Steam (VR) for me also needed to be started as admin
+* For development potentially also Visual Studio starting Unreal need to be run as admin
