@@ -1,8 +1,15 @@
 # How to use the Study Framework to setup your own factorial study in Unreal
 
+## Prepare Project
 * First of all get the StudyFramework as Plugin into you project, e.g., using the setup script of the [RWTH VR Project Template](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/unrealprojecttemplate), this plugin also requires the following plugins:
   * [``RWTH VR Toolkit``](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/plugins/rwth-vr-toolkit)
   * [``Universal Logging``](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/plugins/universallogging)
+* Set game instance (``Settings -> Project Settings -> Maps&Modes``) to ``SFGameInstance``
+* Set game mode (``Settings -> Project Settings -> Maps&Modes``) Set to ``SFGameMode``
+* Potentially set the mouse to not be captured to use the UI (``Settings --> Project Settings --> Input --> Default Viewport Mouse Capture Mode = No Capture``)
+* To use packages builds, e.g., CAVE, tick ``Settings --> Project Settings -> Packaging --> Cook everything in the project content directory``
+
+## Setup Phases and Factors etc.
 * This framework requires a Setup map (e.g., simply the Main level) which is started and contains a study setup, but is not part of the study itself. Add a SFStudySetup (``StudyFrameworkPlugin C++ Classes -> StudyFrameworkPlugin -> Public -> SFStudySetup``) actor to this level. In the properties section of this actor we can set up the study (which is also on saving the map stored in a json file, which chan be changed and is reloaded on editor start. Furthermore there are buttons to storing into and loading from a json file specified, which will be searches in ``ProjectDir/StudyFramework``).
 * Add phases to this setup\
  ![image](uploads/06e2902e6cda1d9dc7994f03ff937145/image.png)\
@@ -18,12 +25,15 @@ The names for the levels/maps should be, e.g., ``/Game/Maps/Warmup`` if there is
 ![image](uploads/968ed9a94170b6e1ae84a8b92f6902e9/image.png)\
 Dependent variables represent whatever you want to measure. They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. Whenever you have gathered information for that variable, pass it on to the system with ``USFGameInstance::Get()->LogData(DependenVariableName, Value)`` which only takes FString for values, so you have to convert it yourself. These are then logged and stored by the system.
 * This is the required study setup, but there are some more options there to explore.
-* Set game instance (``Settings -> Project Settings -> Maps&Modes``) to ``SFGameInstance``
-* Set game mode (``Settings -> Project Settings -> Maps&Modes``) Set to ``SFGameMode``
 * ![image](uploads/ed698d70f2e68dfbc8c895cda36f56a5/image.png)\
 If you want to reorder phases just pull them (1) to another location, since new phases can only be added at the end. (Additionally, you can also rearrange them in the json file while the Editor is closed, it will be reloaded on startup)
-* Potentially set the mouse to not be captured to use the UI (``Settings --> Project Settings --> Input --> Default Viewport Mouse Capture Mode = No Capture``)
-* To use packages builds, e.g., CAVE, tick ``Settings --> Project Settings -> Packaging --> Cook everything in the project content directory``
+
+## Further Setup Options
+* There are some options with regard to fading between conditions:\
+![image](uploads/6873bcb8e81e35a6f8a382de8f9f03b3/image.png)
+* There are also some options for configuring the experimenter view (HUD) and potentially showing it on a second window/screen when running experiments in desktop mode:\
+![image](uploads/130b927a397c214a54cfb417fefbb0b7/image.png)
+
 
 # How to execute a study
 
