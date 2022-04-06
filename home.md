@@ -19,6 +19,7 @@ For information on how to use this, go to the [HowToUse-Section](HowToUse)
 * store data in format ready-tu-use in statistics software
 * Write out run data and last participant in json
 * Start a map and be able to directly debug it
+* Run on different systems: desktop, HMD, CAVE (nDisplay not tested yet!)
 
 Here helpful information should be gathered.
 
