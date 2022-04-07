@@ -1,5 +1,5 @@
 # Prerequisite
-To add eye tracking you have to add the ``SRanipal`` plugin to your project it can be downloaded as part of the SDK [here](https://developer-express.vive.com/resources/vive-sense/eye-and-facial-tracking-sdk/download/latest/) (HTC Vive account required)
+To add eye tracking you have to add the ``SRanipal`` plugin to your project it can be downloaded as part of the SDK [here](https://developer-express.vive.com/resources/vive-sense/eye-and-facial-tracking-sdk/download/latest/) (HTC Vive account required)\
 :warning: Make sure that the ``Plugins/SRanipal/Binaries`` folder is commited to your project. In case it is ignored by default do ``git add -f Plugins/SRanipal/Binaries``
 
 Also in your project you have to have the ``SRanpial`` plugin activated in the .uproject file
