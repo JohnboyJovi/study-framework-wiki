@@ -6,7 +6,7 @@
   * [``Universal Logging``](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/plugins/universallogging)
 * Set game instance (``Settings -> Project Settings -> Maps&Modes``) to ``SFGameInstance``
 * Set game mode (``Settings -> Project Settings -> Maps&Modes``) Set to ``SFGameMode``
-* Potentially set the mouse to not be captured to use the UI (``Settings --> Project Settings --> Input --> Default Viewport Mouse Capture Mode = No Capture``)
+* Potentially set the mouse to not be captured to use the UI (``Settings --> Project Settings --> Input --> Default Viewport Mouse Capture Mode = No Capture``), should however not be necessary when using the latest ``RWTH VR Toolkit`` version
 * To use packages builds, e.g., CAVE, tick ``Settings --> Project Settings -> Packaging --> Cook everything in the project content directory``
 
 ## Setup Phases and Factors etc.
