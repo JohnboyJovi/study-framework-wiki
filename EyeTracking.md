@@ -10,7 +10,7 @@
 * The GazeTracker (e.g. ``USFGameInstance::Get()->GetGazeTracker()``) provides:
   * ``GetCurrentGazeTarget()``: returning the name (``TargetName`` or actor name) of the currently gaze at target or an empty string if nothing "gazeable" is looked at.
   * ``LaunchCalibration()`` to launch a calibration from code.
-  * :warning: NOT IMPLEMENTED YET :warning: logs the currently gaze at target name and the gaze direction per frame into the participant's log file.
+  * :warning: **NOT IMPLEMENTED YET** :warning: logs the currently gaze at target name and the gaze direction per frame into the participant's log file.
 
 # Prerequisite
  
