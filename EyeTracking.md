@@ -1,4 +1,4 @@
-:warning: **This will only work on Windows right now** :warning:
+:warning: **Eye Tracking will only work on Windows right now and only with a Vive Pro Eye** :warning:
 
 # Usage
 
