@@ -1,5 +1,13 @@
 :warning: **This will only work on Windows right now** :warning:
 
+# Usage
+
+* In the ``StudySetup`` Actor set ``UseGazeTracker`` to ``EyeTracking`` (if you want to use the actual eye tracker) or ``HeadRotationOnly`` (which just approximates the gaze direction by the head's forward direction; it is the fall-back if no eye tracker is found and ``EyeTracking`` is chosen).
+* Object's that should be "gazeable" have to have one of the two components:
+  * ``SFGazeTarget``: This has it's own sphere collision which is used for line trace checks (so use this if only part of an actor should be gazeable or even a region greater than the actor itself).
+  * ``SFGazeTargetActor``: The whole actor is used for line trace checks.
+  * both either use the name specified as ``TargetName`` or if ``USeActorName`` is activated, the name of the actor they are attached to.
+
 # Prerequisite
  
 To add eye tracking you have to add the ``SRanipal`` plugin to your project it can be downloaded as part of the SDK [here](https://developer-express.vive.com/resources/vive-sense/eye-and-facial-tracking-sdk/download/latest/) (HTC Vive account required)\
