@@ -7,6 +7,10 @@
   * ``SFGazeTarget``: This has it's own sphere collision which is used for line trace checks (so use this if only part of an actor should be gazeable or even a region greater than the actor itself).
   * ``SFGazeTargetActor``: The whole actor is used for line trace checks.
   * both either use the name specified as ``TargetName`` or if ``USeActorName`` is activated, the name of the actor they are attached to.
+* The GazeTracker (e.g. ``USFGameInstance::Get()->GetGazeTracker()``) provides:
+  * ``GetCurrentGazeTarget()``: returning the name (``TargetName`` or actor name) of the currently gaze at target or an empty string if nothing "gazeable" is looked at.
+  * ``LaunchCalibration()`` to launch a calibration from code.
+  * :warning: NOT IMPLEMENTED YET :warning: logs the currently gaze at target name and the gaze direction per frame into the participant's log file.
 
 # Prerequisite
  
