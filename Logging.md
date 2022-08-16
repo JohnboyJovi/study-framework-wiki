@@ -33,9 +33,9 @@ To do that, we first have to open the level/map, in which we want to log the pos
 If the ``VirtualRealityPawn`` actor does not a have a Blueprint associated with it, we have to create one like this:
 #### Creating a new Blueprint for an Actor
 1. Select the Actor and click on ``Blueprint/Add Script`` in the ``Details`` tab
-   ![add-BP-script-1](uploads/fd5933002cbb087c1b82113a37e83f4e/add-BP-script-1.png)!
+   ![add-BP-script-1](uploads/fd5933002cbb087c1b82113a37e83f4e/add-BP-script-1.png)
 2. We are be prompted with the window seen below. Name and path to where it is saved are not relevant. Example settings are filled in below (I created the folder ``Loggables`` for the actors I want to log). On a technical level, your actor will be replaced with a copy of your actor (an instance of a new subclass to be precise), that behaves in exactly the same way, with the same settings, but it now additionally has all the features defined in the new Blueprint.
-   [add-BP-script-2](uploads/66cfa19b7075133104c5c0a8e00a93e4/add-BP-script-2.png) 
+   ![add-BP-script-2](uploads/66cfa19b7075133104c5c0a8e00a93e4/add-BP-script-2.png) 
 
 Now we can edit the Blueprint.
 > **Tip:** If we use this actor in multiple levels (for example the VRPawn), we can use this loggable version in every level. Simply replace the actor with the new "loggable"-actor. The settings specified in the blueprint will then affect all instances in all levels of that actor. If we want to use different logging settings per actor in different levels, we have to create a new blueprint per level.
