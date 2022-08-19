@@ -23,7 +23,7 @@
 ## Getting Started
 Currently, you can log the position and rotation of actors and components with a specified frequency. For that there are two settings:
 - **LogName** is the name that will associated with the log, if left empty, the id name of the actor will be used
-- **LogTimer** specifies the logging frequency in Miliseconds. So if set to 20, it will write a log 50 times a second. **Note:** The maximum frequency possible is the frame rate the game runs at. So if the frequency of the recorded values is lower than what you set it at, it is probably limited by the frame rate.
+- **LogTimer** specifies the logging frequency in Miliseconds. So if set to 20, it will write a log 50 times a second. **Note:** The maximum frequency possible is the frame rate the game runs at. So if the frequency of the recorded values is lower than what you set it at, it is probably limited by the frame rate. If you want frame-by-frame position logging, simply enter ``0``.
   
 The information will be written out as tab-separated values into a file in the ``StudyFramework/StudyLogs/PositionLogs/``-directory of your project.
 
