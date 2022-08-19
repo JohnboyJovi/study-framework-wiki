@@ -10,7 +10,7 @@
 * The GazeTracker (e.g. ``USFGameInstance::Get()->GetGazeTracker()``) provides:
   * ``GetCurrentGazeTarget()``: returning the name (``TargetName`` or actor name) of the currently gaze at target or an empty string if nothing "gazeable" is looked at.
   * ``LaunchCalibration()`` to launch a calibration from code.
-  * ~~:warning: **NOT IMPLEMENTED YET** :warning:~~ (implemented in feature/gaze_logging branch)  logs the currently gaze at target name and the gaze direction per frame into a separate file per participant. The participant's gaze tracking logs are located in the StudyLogs/GazeTrackingLogs folder. For head rotation logs, please refer to the [Logging the Position of the Player] (https://git-ce.rwth-aachen.de/vr-vis/VR-Group/unreal-development/plugins/unreal-study-framework/-/wikis/Logging#example-logging-the-position-of-the-player-in-vr) section of the wiki.
+  * ~~:warning: **NOT IMPLEMENTED YET** :warning:~~ (implemented in feature/gaze_logging branch)  logs the currently gaze at target name and the gaze direction per frame into a separate file per participant. The participant's gaze tracking logs are located in the StudyLogs/GazeTrackingLogs folder. For head rotation logs, please refer to the [Logging the Position of the Player](https://git-ce.rwth-aachen.de/vr-vis/VR-Group/unreal-development/plugins/unreal-study-framework/-/wikis/Logging#example-logging-the-position-of-the-player-in-vr) section of the wiki.
 
 # Prerequisite
 
