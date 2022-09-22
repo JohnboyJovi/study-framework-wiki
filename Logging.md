@@ -18,7 +18,7 @@ Currently, you can log the position and rotation of actors and components with a
 
 The information will be written out as tab-separated values into a file in the `StudyFramework/StudyLogs/PositionLogs/`-directory of your project. **Note:**
 
-- The maximum possible logging frequency is the game's frame rate. So if the frequency of the recorded values is lower than what you set it at, it is probably limited by the frame rate. If you want frame-by-frame position logging, simply enter `0`.
+- The maximum possible logging frequency is the game's frame rate. So if the frequency of the recorded values is lower than what you set it at, it is probably limited by the frame rate. If you want frame-by-frame position logging, simply set the LogTimer to `0`.
 - When an actor/component is added to logging on one map, this will not automatically transfer to the other maps. If you want to track a component's / an actor's movements in all maps, you have to add it to logging in each map (see "Tip" below).
 - The logging is only active when a condition is active (namely **not** while fading in / fading out), even though the player can still interact with the game during the fading process. The length of the fade can be specified in the StudySetup object settings (see [HowToUse - Further Setup Options](/HowToUse#further-setup-options)).
 
