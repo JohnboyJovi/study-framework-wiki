@@ -24,7 +24,7 @@ The names for the levels/maps should be, e.g., ``/Game/Maps/Warmup`` if there is
   * Condition orders etc. can be randomized, see the [randomization](Randomization) page
 * Add dependent variables to the phase(1)\
 ![image](uploads/968ed9a94170b6e1ae84a8b92f6902e9/image.png)\
-Dependent variables represent whatever you want to measure. They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. Whenever you have gathered information for that variable, pass it on to the system with ``USFGameInstance::Get()->LogData(DependenVariableName, Value)`` which only takes FString for values, so you have to convert it yourself. These are then logged and stored by the system.
+Dependent variables represent whatever you want to measure. They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. Whenever you have gathered information for that variable, pass it on to the system with ``USFLoggingBPLibrary::LogData(DependentVariableName, Value)`` which only takes FString for values, so you have to convert it yourself. These are then logged and stored by the system. This function can also be called from within a blueprint. 
 * This is the required study setup, but there are some more options there to explore.
 * ![image](uploads/ed698d70f2e68dfbc8c895cda36f56a5/image.png)\
 If you want to reorder phases just pull them (1) to another location, since new phases can only be added at the end. (Additionally, you can also rearrange them in the json file while the Editor is closed, it will be reloaded on startup)
