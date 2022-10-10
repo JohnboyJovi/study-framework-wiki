@@ -10,7 +10,7 @@
 * To use packages builds, e.g., CAVE, tick ``Settings --> Project Settings -> Packaging --> Cook everything in the project content directory``
 
 ## Setup Phases and Factors etc.
-:warning: **If you changed something in the study setup, save the map afterwards, since then the setup is saved to json. Otherwise the changes will be overwritten on startup when the json setup is loaded** :warning:
+* Whenever a property of the StudySetup is changed, this change will automatically be saved to a JSON file, by default "StudySetup.json". You can also load a different setup file, using the ```Select Setup File```-function, as long as this file is located on the same hard drive.
 * This framework requires a Setup map (e.g., simply the Main level) which is started and contains a study setup, but is not part of the study itself. Add a SFStudySetup (``StudyFrameworkPlugin C++ Classes -> StudyFrameworkPlugin -> Public -> SFStudySetup``) actor to this level. In the properties section of this actor we can set up the study (which is also on saving the map stored in a json file, which chan be changed and is reloaded on editor start. Furthermore there are buttons to storing into and loading from a json file specified, which will be searches in ``ProjectDir/StudyFramework``).
 * Add phases to this setup\
  ![image](uploads/06e2902e6cda1d9dc7994f03ff937145/image.png)\
