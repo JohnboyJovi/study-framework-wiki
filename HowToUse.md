@@ -10,8 +10,8 @@
 * To use packages builds, e.g., CAVE, tick ``Settings --> Project Settings -> Packaging --> Cook everything in the project content directory``
 
 ## Setup Phases and Factors etc.
-* Whenever a property of the StudySetup is changed, this change will automatically be saved to a JSON file, by default "StudySetup.json". You can also load a different setup file, using the ```Select Setup File```-function, as long as this file is located on the same hard drive.
-* This framework requires a Setup map (e.g., simply the Main level) which is started and contains a study setup, but is not part of the study itself. Add a SFStudySetup (``StudyFrameworkPlugin C++ Classes -> StudyFrameworkPlugin -> Public -> SFStudySetup``) actor to this level. In the properties section of this actor we can set up the study (which is also on saving the map stored in a json file, which chan be changed and is reloaded on editor start. Furthermore there are buttons to storing into and loading from a json file specified, which will be searches in ``ProjectDir/StudyFramework``).
+* This framework requires a Setup map (e.g., simply the Main level) which is started and contains a study setup, but is not part of the study itself. Add a SFStudySetup (``StudyFrameworkPlugin C++ Classes -> StudyFrameworkPlugin -> Public -> SFStudySetup``) actor to this level. In the properties section of this actor we can set up the study.  Whenever a property of the StudySetup is changed, this change will automatically be saved to a JSON file, by default "StudySetup.json" located in the ```[ProjectDir]/StudyFramework``` folder. You can switch between different setup files, using the ```Select Setup File```-function. Note: Setup files have to be located on the same drive as the project folder.\
+![Select Setup File](uploads/741725a5091a4143c1549b2050ae40e6/grafik.png)
 * Add phases to this setup\
  ![image](uploads/06e2902e6cda1d9dc7994f03ff937145/image.png)\
 and select ``SFStudyPhase`` instead of ``None`` (phases can be used if some blocks of the study should always come in the same order, e.g., always start with a warm-up phase or always end with a nice end scene), at least one phase needs to be present!
@@ -57,5 +57,3 @@ so that all data generated during debug runs is removed and the study startes wi
 * You can create a bunch of study runs for different participant IDs, to check whether the setup works as expected, use this section in the StudySetup actor: \
 ![image](uploads/2c3feeae173d0bab1c7863eef9f76592/image.png)\
 Put in the number of runs to generate and click the button, then you can find the ``Participant_[i].json`` files at ``StudyFramework/StudyRuns``
-
-
