@@ -1,8 +1,10 @@
-There are two different levels where randomization can be applied
+There are two different levels where randomization can be applied (see below)
+
+All randomization is seeded with the participant id, so with the same participant id you will always see the same order. Also the study phase index is used, so two exactly identical study phases (following eachother) will have different orders for the same participant.
 
 # Study Phase
 
-Here repetitions of all conditions can be specified, so each condition is seen by one participant mutliple times
+Here repetitions of all conditions (of this phase) phase can be specified, so each condition is seen by one participant mutliple times
 * ``Number of repetition`` simlpy specifies how often each condition should be seen.
 * ``Type of Repetition`` is concerned with the ordering of those repetitions:
   * ``SameOrder``: Repeat all conditions in the same order again NumberOfRepetitions times	 
@@ -26,4 +28,4 @@ Here repetitions of all conditions can be specified, so each condition is seen b
 Since randomization is to avoid order effects you should make sure that all orders are seen the same number of times for the best possible statistic validity. That means:
 * The number of participants should be a multiple of the number of levels of all between-subjects factors
 * The number of participants should be a multiple of the number of conditions (per phase). Excluding ``en block`` factors since they reduce the number of orders shown). So, e.g., with 2 random factors with 2 and 3 levels respectively, the number of participants should be a multiple of 6.
-* If you are unsure. Use the ``GenerateTestStudyRuns(...)`` method of SFGameInstance and then check in the generated runs (``StudyFramework(StudyRuns``) after which number of participants the orders repeat.
+* If you are unsure. Use the ``Generate Test Study Runs`` button of the Study Setup (in the ``Study Setup Debug`` section) and then check in the generated runs (``StudyFramework(StudyRuns``) after which number of participants the orders repeat.
