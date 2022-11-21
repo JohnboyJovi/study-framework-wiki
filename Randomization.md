@@ -1,6 +1,10 @@
-There are two different levels where randomization can be applied (see below)
+There are three different levels where randomization can be applied (see below)
 
 All randomization is seeded with the participant id, so with the same participant id you will always see the same order. Also the study phase index is used, so two exactly identical study phases (following eachother) will have different orders for the same participant.
+
+# Study Setup
+
+* ``PhasesToOrderRandomize`` can be used to specify phase names of phases which should be randomized in order between participants. So if a study has the phases ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``PhasesToOrderRandomize = { Phase1, Phase2}`` is given. Then participants will alternately see orders ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``Warmup``, ``Phase2``, ``Break``, ``Phase1``.
 
 # Study Phase
 
