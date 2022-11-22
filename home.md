@@ -12,6 +12,8 @@ For information on how to use this, go to the [HowToUse-Section](HowToUse)
 
 [How can I use eye tracking](EyeTracking)
 
+[Some possible solutions to problems can be found in the Trouble Shooting Section](TroubleShooting)
+
 **Features provided are:**
 * Quickly setup a study with factorial design
 * Fading between levels/conditions
