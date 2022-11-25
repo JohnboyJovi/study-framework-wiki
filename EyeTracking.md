@@ -1,5 +1,7 @@
 :warning: **Eye Tracking will only work on Windows right now and only with a Vive Pro Eye** :warning: Just head orientation tracking will always work!
 
+There is a GazeTest map in the [Study Framework Demo](https://git-ce.rwth-aachen.de/vr-vis/VR-Group/study-framework-demo) project.
+
 # Usage
 
 * In the ``StudySetup`` Actor set ``UseGazeTracker`` to ``EyeTracking`` (if you want to use the actual eye tracker) or ``HeadRotationOnly`` (which just approximates the gaze direction by the head's forward direction; it is the fall-back if no eye tracker is found and ``EyeTracking`` is chosen).
