@@ -34,4 +34,4 @@ Here repetitions of all conditions (of this phase) phase can be specified, so ea
 Since randomization is to avoid order effects you should make sure that all orders are seen the same number of times for the best possible statistic validity. That means:
 * The number of participants should be a multiple of the number of levels of all between-subjects factors
 * The number of participants should be a multiple of the number of conditions (per phase). Excluding ``en block`` factors since they reduce the number of orders shown). So, e.g., with 2 random factors with 2 and 3 levels respectively, the number of participants should be a multiple of 6.
-* If you are unsure. Use the ``Generate Test Study Runs`` button of the Study Setup (in the ``Study Setup Debug`` section) and then check in the generated runs (``StudyFramework(StudyRuns``) after which number of participants the orders repeat.
+* If you are unsure. Use the ``Generate Test Study Runs`` button of the Study Setup (in the ``Study Setup Debug`` section) and then check in the generated runs (``StudyFramework/StudyRuns``) after which number of participants the orders repeat.
