@@ -98,7 +98,7 @@ If you have two factors and want to fully randomize the order of presentation of
 | 6 | 🟠1 | 🟠2 | 🟢2 | 🔵1 | 🟢1 | 🔵2 |
 | ... |
 
-After that orders will be repeated, so having a multiple of 6 participants would be recommended here. *Also note that you can nicely see the ``Balanced Latin Square`` structure here, having in each column and row each condition exactly once and having each condition being followed by every other condition exactly once!*
+Notice that after 6 runs orders will be repeated, so having a multiple of 6 participants would be recommended here. *Also note that you can nicely see the ``Balanced Latin Square`` structure here, having in each column and row each condition exactly once and having each condition being followed by every other condition exactly once!*
 
 # EnBlock
 If you want to have, e.g., always the same colored repetition next to each other, you can you ``EnBlock``
