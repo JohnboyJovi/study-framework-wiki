@@ -4,18 +4,6 @@ All randomization is seeded with the participant id, so with the same participan
 
 *Some examples can be found here: [Randomization/Examples](Randomization/Examples)
 
-# Study Setup
-
-* ``PhasesToOrderRandomize`` can be used to specify phase names of phases which should be randomized in order between participants. So if a study has the phases ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``PhasesToOrderRandomize = { Phase1, Phase2}`` is given. Then participants will alternately see orders ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``Warmup``, ``Phase2``, ``Break``, ``Phase1``.
-
-# Study Phase
-
-Here repetitions of all conditions (of this phase) phase can be specified, so each condition is seen by one participant mutliple times
-* ``Number of repetition`` simlpy specifies how often each condition should be seen.
-* ``Type of Repetition`` is concerned with the ordering of those repetitions:
-  * ``SameOrder``: Repeat all conditions in the same order again NumberOfRepetitions times	 
-  * ``DifferentOrder``: Each repetition block is shuffeled, but 2nd repetitions are only done after each condition was seen once, and so on
-  * ``FullyRandom``: Repeat all conditions NumberOfRepetitions times, but in an arbitrary order
 
 # Study Factor
 
@@ -28,6 +16,12 @@ Here repetitions of all conditions (of this phase) phase can be specified, so ea
   * ``In Order``: The order of the factors' levels will not be randomized (Latingquare) between subjects. So all subjects see this factor's levels in the order specified for the factor. 
   * :warning: Careful when using ``En Block`` and ``In Order`` together: ``En Block`` is considered first and then the ``In Order`` factors are kept in there given order. Note that order of defining the factors matters, e.g., when using multiple ``In Order`` factors (see [Randomization/Examples](Randomization/Examples#using-inorder-potentially-for-multiple-factors) for clarification).
 * ``Non-combined``: This means that this factor is not used to generate the different conditions, but rather as randomness in the task or repetitions. So it is not combined with the other factors but just randomized in parallel. For example if the task is drawing different animals and other factors like brush size and drawing method should be examined, the type of animal to draw should be ``non-combined`` so that ideally each condition (combination of brush size and drawing technique) is evaluated with another animal for all participants to avoid effects of some animals being easier to draw. ``non-combined factors`` are always randomize using [Balanced Latin Squares](https://cs.uwaterloo.ca/~dmasson/tools/latin_square/), potentially reapeating levels if more than given are needed for the conditions computed from the other factors. However, to have those conditions, at least one factor per phase has to not be ``non-combined``. For non-combined factors, there number should be different from the number of conditions (and they should not be multiples of each other), so the best possible shuffling of conditions to non-combined levels is achieved.
+* **Repetitions**: if conditions should be repeated multiple times, it is easiest to add an additional Factor, e.g. ``Repetition`` with Levels ``{1,2,3} for three repetitions, and then use ``Random`` (repetitions are done fully random), ``EnBlock`` (the second repetitions are only begun once all condictions were seen once, and so on), or ``InOrder`` (e.g., in combination with another ``EnBlock`` Factor of which all repetitions are shown right after eachother). Examples for this can be found in [Randomization/Examples](Randomization/Examples#using-inorder-potentially-for-multiple-factors). In case more involved repetition patterns are required, the ``ConditionSortingCallback()`` function should be used (see below).
+
+# Study Setup
+
+* ``PhasesToOrderRandomize`` can be used to specify phase names of phases which should be randomized in order between participants. So if a study has the phases ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``PhasesToOrderRandomize = { Phase1, Phase2}`` is given. Then participants will alternately see orders ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``Warmup``, ``Phase2``, ``Break``, ``Phase1``.
+* ``ConditionSortingCallback()``:
 
 
 # Number of Participants
