@@ -202,7 +202,7 @@ If you want to have, e.g., always the same colored repetition next to each other
 
 * Color: {🟠, 🔵, 🟢} (``Mixing Order: EnBlock``)
 * Number: {1, 2} (``Mixing Order: InOrder``)
-* Letter: {a, b, c} (``Mixing Order: Random``)
+* Letter: {a, b} (``Mixing Order: Random``)
 
 <p>
 <details>
@@ -239,8 +239,7 @@ If you want to have, e.g., always the same colored repetition next to each other
 					"FactorName": "letter",
 					"Levels": [
 						"a",
-						"b",
-						"c"
+						"b"
 					],
 					"MixingOrder": "RandomOrder",
 					"Type": "Within",
@@ -295,17 +294,13 @@ If you want to have, e.g., always the same colored repetition next to each other
 </details>
 </p>
 
-| participant # |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 🟠 1 a | 🟠 1 b | 🟠 1 c | 🟠 2 a | 🟠 2 c | 🟠 2 b | 🔵 1 a | 🔵 1 c | 🔵 1 b | 🔵 2 c | 🔵 2 a | 🔵 2 b | 🟢 1 c | 🟢 1 a | 🟢 1 b | 🟢 2 c | 🟢 2 b | 🟢 2 a |
-| 1 | 🟠 1 a | 🟠 1 c | 🟠 1 b | 🟠 2 c | 🟠 2 a | 🟠 2 b | 🟢 1 c | 🟢 1 a | 🟢 1 b | 🟢 2 c | 🟢 2 b | 🟢 2 a | 🔵 1 c | 🔵 1 b | 🔵 1 a | 🔵 2 b | 🔵 2 c | 🔵 2 a |
-| 2 | 🟢 1 c | 🟢 1 a | 🟢 1 b | 🟢 2 c | 🟢 2 b | 🟢 2 a | 🟠 1 c | 🟠 1 b | 🟠 1 a | 🟠 2 b | 🟠 2 c | 🟠 2 a | 🔵 1 b | 🔵 1 c | 🔵 1 a | 🔵 2 b | 🔵 2 a | 🔵 2 c |
-| 3 | 🟢 1 c | 🟢 1 b | 🟢 1 a | 🟢 2 b | 🟢 2 c | 🟢 2 a | 🔵 1 b | 🔵 1 c | 🔵 1 a | 🔵 2 b | 🔵 2 a | 🔵 2 c | 🟠 1 b | 🟠 1 a | 🟠 1 c | 🟠 2 a | 🟠 2 b | 🟠 2 c |
-| 4 | 🔵 1 b | 🔵 1 c | 🔵 1 a | 🔵 2 b | 🔵 2 a | 🔵 2 c | 🟢 1 b | 🟢 1 a | 🟢 1 c | 🟢 2 a | 🟢 2 b | 🟢 2 c | 🟠 1 a | 🟠 1 b | 🟠 1 c | 🟠 2 a | 🟠 2 c | 🟠 2 b |
-| 5 | 🔵 1 b | 🔵 1 a | 🔵 1 c | 🔵 2 a | 🔵 2 b | 🔵 2 c | 🟠 1 a | 🟠 1 b | 🟠 1 c | 🟠 2 a | 🟠 2 c | 🟠 2 b | 🟢 1 a | 🟢 1 c | 🟢 1 b | 🟢 2 c | 🟢 2 a | 🟢 2 b |
-| 6 | 🟠 1 a | 🟠 1 b | 🟠 1 c | 🟠 2 a | 🟠 2 c | 🟠 2 b | 🔵 1 a | 🔵 1 c | 🔵 1 b | 🔵 2 c | 🔵 2 a | 🔵 2 b | 🟢 1 c | 🟢 1 a | 🟢 1 b | 🟢 2 c | 🟢 2 b | 🟢 2 a |
-| 7 | 🟠 1 a | 🟠 1 c | 🟠 1 b | 🟠 2 c | 🟠 2 a | 🟠 2 b | 🟢 1 c | 🟢 1 a | 🟢 1 b | 🟢 2 c | 🟢 2 b | 🟢 2 a | 🔵 1 c | 🔵 1 b | 🔵 1 a | 🔵 2 b | 🔵 2 c | 🔵 2 a |
-| 8 | 🟢 1 c | 🟢 1 a | 🟢 1 b | 🟢 2 c | 🟢 2 b | 🟢 2 a | 🟠 1 c | 🟠 1 b | 🟠 1 a | 🟠 2 b | 🟠 2 c | 🟠 2 a | 🔵 1 b | 🔵 1 c | 🔵 1 a | 🔵 2 b | 🔵 2 a | 🔵 2 c |
-| 9 | 🟢 1 c | 🟢 1 b | 🟢 1 a | 🟢 2 b | 🟢 2 c | 🟢 2 a | 🔵 1 b | 🔵 1 c | 🔵 1 a | 🔵 2 b | 🔵 2 a | 🔵 2 c | 🟠 1 b | 🟠 1 a | 🟠 1 c | 🟠 2 a | 🟠 2 b | 🟠 2 c |
-| 10 | 🔵 1 b | 🔵 1 c | 🔵 1 a | 🔵 2 b | 🔵 2 a | 🔵 2 c | 🟢 1 b | 🟢 1 a | 🟢 1 c | 🟢 2 a | 🟢 2 b | 🟢 2 c | 🟠 1 a | 🟠 1 b | 🟠 1 c | 🟠 2 a | 🟠 2 c | 🟠 2 b |
-| 11 | 🔵 1 b | 🔵 1 a | 🔵 1 c | 🔵 2 a | 🔵 2 b | 🔵 2 c | 🟠 1 a | 🟠 1 b | 🟠 1 c | 🟠 2 a | 🟠 2 c | 🟠 2 b | 🟢 1 a | 🟢 1 c | 🟢 1 b | 🟢 2 c | 🟢 2 a | 🟢 2 b |
+| participant # |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 🟠 1 a | 🟠 1 b | 🟠 2 b | 🟠 2 a | 🔵 1 b | 🔵 1 a | 🔵 2 a | 🔵 2 b | 🟢 1 a | 🟢 1 b | 🟢 2 b | 🟢 2 a |
+| 1 | 🟠 1 b | 🟠 1 a | 🟠 2 a | 🟠 2 b | 🟢 1 a | 🟢 1 b | 🟢 2 b | 🟢 2 a | 🔵 1 b | 🔵 1 a | 🔵 2 a | 🔵 2 b |
+| 2 | 🟢 1 a | 🟢 1 b | 🟢 2 b | 🟢 2 a | 🟠 1 b | 🟠 1 a | 🟠 2 a | 🟠 2 b | 🔵 1 a | 🔵 1 b | 🔵 2 b | 🔵 2 a |
+| 3 | 🟢 1 b | 🟢 1 a | 🟢 2 a | 🟢 2 b | 🔵 1 a | 🔵 1 b | 🔵 2 b | 🔵 2 a | 🟠 1 b | 🟠 1 a | 🟠 2 a | 🟠 2 b |
+| 4 | 🔵 1 a | 🔵 1 b | 🔵 2 b | 🔵 2 a | 🟢 1 b | 🟢 1 a | 🟢 2 a | 🟢 2 b | 🟠 1 a | 🟠 1 b | 🟠 2 b | 🟠 2 a |
+| 5 | 🔵 1 b | 🔵 1 a | 🔵 2 a | 🔵 2 b | 🟠 1 a | 🟠 1 b | 🟠 2 b | 🟠 2 a | 🟢 1 b | 🟢 1 a | 🟢 2 a | 🟢 2 b |
+| 6 | 🟠 1 a | 🟠 1 b | 🟠 2 b | 🟠 2 a | 🔵 1 b | 🔵 1 a | 🔵 2 a | 🔵 2 b | 🟢 1 a | 🟢 1 b | 🟢 2 b | 🟢 2 a |
+| ... |
