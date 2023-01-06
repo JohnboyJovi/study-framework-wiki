@@ -629,6 +629,138 @@ So far all examples only used ``Within``-subject factors, where each participant
 
 Notice that every participants either only sees ``1``s or ``2``s.
 
+# Repetition defined per Phase
+
+The following three examples all use the same factors:
+
+* Color: {🟠, 🔵} (``Mixing Order: RandomOrder``)
+* Number: {1, 2} (``Mixing Order: RandomOrder``)
+* ``Number Of Repetitions: 2``
+
+<p>
+<details>
+<summary>StudySetup.json</summary>
+
+```
+{
+	"Phases": [
+		{
+			"Name": "Study",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"/Game/Maps/StudyMap1"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				},
+				{
+					"FactorName": "TextColor",
+					"Levels": [
+						"Orange",
+						"Blue"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "Number",
+					"Levels": [
+						"1",
+						"2"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				}
+			],
+			"Dependent Variables": [
+				{
+					"Name": "Visibility",
+					"Required": true
+				},
+				{
+					"Name": "OtherData",
+					"Required": false
+				}
+			],
+			"Number Of Repetitions": 2,
+			"TypeOfRepetition": "SameOrder"
+		}
+	],
+	"PhasesToOrderRandomize": [],
+	"FadeConfig":
+	{
+		"StartFadedOut": true,
+		"FadeDuration": 2,
+		"FadeOutDuration": 1,
+		"FadeColor": "(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"
+	},
+	"ExperimenterViewConfig":
+	{
+		"ShowHUD": true,
+		"ShowConditionsPanelByDefault": false,
+		"ShowExperimenterViewInSecondWindow": false,
+		"SecondWindowSizeX": 1920,
+		"SecondWindowSizeY": 1080,
+		"SecondWindowPosX": 1920,
+		"SecondWindowPosY": 0
+	},
+	"UseGazeTracker": "NotTracking"
+}
+```
+</details>
+</p>
+
+## ``Type of Repetition: SameOrder``
+
+| participant # |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 |
+| 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 |
+| 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 |
+| 3 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 |
+| 4 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 |
+| ... |
+
+The second four conditions are exactly in the same order as the first four.
+
+## ``Type of Repetition: SameOrder``
+
+| participant # |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 |
+| 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 |
+| 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 |
+| 3 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 |
+| 4 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 |
+| ... |
+
+Note that all conditions are seen exactly once before they are repeated a second time.
+
+## ``Type of Repetition: Fully Random``
+
+| participant # |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 🟠 1 | 🟠 1 | 🔵 2 | 🟠 2 | 🔵 2 | 🟠 2 | 🔵 1 | 🔵 1 |
+| 1 | 🟠 1 | 🟠 2 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🔵 2 | 🔵 1 |
+| 2 | 🟠 2 | 🟠 2 | 🟠 1 | 🔵 1 | 🟠 1 | 🔵 1 | 🔵 2 | 🔵 2 |
+| 3 | 🟠 2 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 | 🟠 1 | 🔵 2 |
+| 4 | 🔵 1 | 🔵 1 | 🟠 2 | 🔵 2 | 🟠 2 | 🔵 2 | 🟠 1 | 🟠 1 |
+| 5 | 🔵 1 | 🔵 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 | 🟠 2 | 🟠 1 |
+| 6 | 🔵 2 | 🔵 2 | 🔵 1 | 🟠 1 | 🔵 1 | 🟠 1 | 🟠 2 | 🟠 2 |
+| 7 | 🔵 2 | 🟠 1 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 2 |
+| 8 ... |
+
+Note that this requires not a multiple of 4 but of 8 participants to be perfectly counterbalanced. Also when randomizig it it not considered that 🟠 1 = 🟠 1 they are treated as two separate conditions in the Latin Square, which can yield some patterns reoccuring more often then others. However, it is hard to tell what a better solution would be.
+
+
+
+
 
 
 
