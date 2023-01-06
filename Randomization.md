@@ -21,7 +21,7 @@ All randomization is seeded with the participant id, so with the same participan
 # Study Setup
 
 * ``PhasesToOrderRandomize`` can be used to specify phase names of phases which should be randomized in order between participants. So if a study has the phases ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``PhasesToOrderRandomize = { Phase1, Phase2}`` is given. Then participants will alternately see orders ``Warmup``, ``Phase1``, ``Break``, ``Phase2`` and ``Warmup``, ``Phase2``, ``Break``, ``Phase1``.
-* ``ConditionSortingCallback()``: this is a function in the ``ASFStudySetup`` class, that in its default implementation does nothing. It can be overridden in C++ (currently blueprints are not supported for this, since that complicated matters a lot). The function receives an ``TArray<USFCondition*>`` and should return a reordered version of this. You can simply change the order of all of these conditions. However, removing or adding entries can have *undefined behavior*!
+* ``ConditionSortingCallback()``: this is a function in the ``ASFStudySetup`` class, that in its default implementation does nothing. It can be overridden in C++ (currently blueprints are not supported for this, since that complicated matters a lot). The function receives an ``TArray<USFCondition*>`` (containing the order of condition as created by all specification possibilities mentioned above) and should return a reordered version of this. You can simply change the order of all of these conditions. However, removing or adding entries can have *undefined behavior*!
 
 
 # Number of Participants
