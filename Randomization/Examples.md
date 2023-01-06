@@ -412,4 +412,6 @@ If the letter in the above example should simply add some randomness ut not incr
 | 5 | 🔵 1 b | 🔵 2 a | 🟠 1 b | 🟠 2 a | 🟢 1 b | 🟢 2 a |
 | 6 | 🟠 1 a | 🟠 2 b | 🔵 1 a | 🔵 2 b | 🟢 1 a | 🟢 2 b |
 | ... |
+
+
 Note that we only have 6 conditions here per run, instead of the 12 we had in the example above where ``NonCombied`` was not used.
