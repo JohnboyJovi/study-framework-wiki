@@ -825,7 +825,203 @@ But repetition can, e.g., also be configured to always **show all 🟠 condition
 
 Note that in this case there is more regularity then we would like to have due to the layout and usage of the Latin Square table. If this is a problem, you have to use the ``ConditionSortingCallback()`` function (see below).
 
+# Phase Randomization
 
+In this example we have split our task in two phases with a break in between:
+
+* Phase 1
+  * Color: {🟠, 🟢} (``Mixing Order: RandomOrder``)
+  * Letter: {a, b} (``Mixing Order: RandomOrder``)
+  * Number: {1, 2, 3, 4, 5, 6, 7, 8} (``NonCombined: true``) This could, e.g., be different task participants have to do
+* Break
+* Phase 2 (set in italic)
+  * Color: {🔵} (``Mixing Order: RandomOrder``)
+  * Letter: {a, b} (``Mixing Order: RandomOrder``)
+  * Number: {1, 2, 3, 4, 5, 6, 7, 8} (``NonCombined: true``) This could, e.g., be different task participants have to do
+
+<p>
+<details>
+<summary>StudySetup.json</summary>
+
+```
+{
+	"Phases": [
+		{
+			"Name": "Phase1",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"/Game/Maps/StudyMap1"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				},
+				{
+					"FactorName": "TextColor",
+					"Levels": [
+						"Orange",
+						"Green"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "letter",
+					"Levels": [
+						"a",
+						"b"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "number",
+					"Levels": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": true
+				}
+			],
+			"Dependent Variables": [
+				{
+					"Name": "Visibility",
+					"Required": true
+				},
+				{
+					"Name": "OtherData",
+					"Required": false
+				}
+			]
+		},
+		{
+			"Name": "Break",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"BreakMap"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				}
+			],
+			"Dependent Variables": []
+		},
+		{
+			"Name": "Phase2",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"/Game/Maps/StudyMap1"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				},
+				{
+					"FactorName": "TextColor",
+					"Levels": [
+						"Blue"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "letter",
+					"Levels": [
+						"a",
+						"b"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "number",
+					"Levels": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": true
+				}
+			],
+			"Dependent Variables": [
+				{
+					"Name": "Visibility",
+					"Required": true
+				},
+				{
+					"Name": "OtherData",
+					"Required": false
+				}
+			]
+		}
+	],
+	"PhasesToOrderRandomize": [],
+	"FadeConfig":
+	{
+		"StartFadedOut": true,
+		"FadeDuration": 2,
+		"FadeOutDuration": 1,
+		"FadeColor": "(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"
+	},
+	"ExperimenterViewConfig":
+	{
+		"ShowHUD": true,
+		"ShowConditionsPanelByDefault": false,
+		"ShowExperimenterViewInSecondWindow": false,
+		"SecondWindowSizeX": 1920,
+		"SecondWindowSizeY": 1080,
+		"SecondWindowPosX": 1920,
+		"SecondWindowPosY": 0
+	},
+	"UseGazeTracker": "NotTracking"
+}
+```
+</details>
+</p>
+
+| participant # |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 🟠 a 1 | 🟠 b 2 | 🟢 b 8 | 🟢 a 3 |Break |* 🔵 a 3* |* 🔵 b 4* |
+| 1 | 🟠 b 2 | 🟢 a 3 | 🟠 a 1 | 🟢 b 4 |Break |* 🔵 b 4* |* 🔵 a 5* |
+| 2 | 🟢 a 3 | 🟢 b 4 | 🟠 b 2 | 🟠 a 5 |Break |* 🔵 a 5* |* 🔵 b 6* |
+| 3 | 🟢 b 4 | 🟠 a 5 | 🟢 a 3 | 🟠 b 6 |Break |* 🔵 b 6* |* 🔵 a 7* |
+| 4 | 🟠 a 5 | 🟠 b 6 | 🟢 b 4 | 🟢 a 7 |Break |* 🔵 a 7* |* 🔵 b 8* |
+| 5 | 🟠 b 6 | 🟢 a 7 | 🟠 a 5 | 🟢 b 8 |Break |* 🔵 b 8* |* 🔵 a 1* |
+| 6 | 🟢 a 7 | 🟢 b 8 | 🟠 b 6 | 🟠 a 1 |Break |* 🔵 a 1* |* 🔵 b 2* |
+| 7 | 🟢 b 8 | 🟠 a 1 | 🟢 a 7 | 🟠 b 2 |Break |* 🔵 b 2* |* 🔵 a 3* |
+| 8 | 🟠 a 1 | 🟠 b 2 | 🟢 b 8 | 🟢 a 3 |Break |* 🔵 a 3* |* 🔵 b 4* |
+| 9 | 🟠 b 2 | 🟢 a 3 | 🟠 a 1 | 🟢 b 4 |Break |* 🔵 b 4* |* 🔵 a 5* |
+| 10 | 🟢 a 3 | 🟢 b 4 | 🟠 b 2 | 🟠 a 5 |Break |* 🔵 a 5* |* 🔵 b 6* |
+| 11 | 🟢 b 4 | 🟠 a 5 | 🟢 a 3 | 🟠 b 6 |Break |* 🔵 b 6* |* 🔵 a 7* |
 
 
 
