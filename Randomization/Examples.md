@@ -1010,18 +1010,38 @@ In this example we have split our task in two phases with a break in between:
 
 | participant # |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 🟠 a 1 | 🟠 b 2 | 🟢 b 8 | 🟢 a 3 |Break |* 🔵 a 3* |*🔵 b 4* |
-| 1 | 🟠 b 2 | 🟢 a 3 | 🟠 a 1 | 🟢 b 4 |Break |* 🔵 b 4* |* 🔵 a 5* |
-| 2 | 🟢 a 3 | 🟢 b 4 | 🟠 b 2 | 🟠 a 5 |Break |* 🔵 a 5* |* 🔵 b 6* |
-| 3 | 🟢 b 4 | 🟠 a 5 | 🟢 a 3 | 🟠 b 6 |Break |* 🔵 b 6* |* 🔵 a 7* |
-| 4 | 🟠 a 5 | 🟠 b 6 | 🟢 b 4 | 🟢 a 7 |Break |* 🔵 a 7* |* 🔵 b 8* |
-| 5 | 🟠 b 6 | 🟢 a 7 | 🟠 a 5 | 🟢 b 8 |Break |* 🔵 b 8* |* 🔵 a 1* |
-| 6 | 🟢 a 7 | 🟢 b 8 | 🟠 b 6 | 🟠 a 1 |Break |* 🔵 a 1* |* 🔵 b 2* |
-| 7 | 🟢 b 8 | 🟠 a 1 | 🟢 a 7 | 🟠 b 2 |Break |* 🔵 b 2* |* 🔵 a 3* |
-| 8 | 🟠 a 1 | 🟠 b 2 | 🟢 b 8 | 🟢 a 3 |Break |* 🔵 a 3* |* 🔵 b 4* |
-| 9 | 🟠 b 2 | 🟢 a 3 | 🟠 a 1 | 🟢 b 4 |Break |* 🔵 b 4* |* 🔵 a 5* |
-| 10 | 🟢 a 3 | 🟢 b 4 | 🟠 b 2 | 🟠 a 5 |Break |* 🔵 a 5* |* 🔵 b 6* |
-| 11 | 🟢 b 4 | 🟠 a 5 | 🟢 a 3 | 🟠 b 6 |Break |* 🔵 b 6* |* 🔵 a 7* |
+| 0 |🟠 a 1 |🟠 b 2 |🟢 b 8 |🟢 a 3 |Break |*🔵 a 3* |*🔵 b 4* |
+| 1 |🟠 b 2 |🟢 a 3 |🟠 a 1 |🟢 b 4 |Break |*🔵 b 4* |*🔵 a 5* |
+| 2 |🟢 a 3 |🟢 b 4 |🟠 b 2 |🟠 a 5 |Break |*🔵 a 5* |*🔵 b 6* |
+| 3 |🟢 b 4 |🟠 a 5 |🟢 a 3 |🟠 b 6 |Break |*🔵 b 6* |*🔵 a 7* |
+| 4 |🟠 a 5 |🟠 b 6 |🟢 b 4 |🟢 a 7 |Break |*🔵 a 7* |*🔵 b 8* |
+| 5 |🟠 b 6 |🟢 a 7 |🟠 a 5 |🟢 b 8 |Break |*🔵 b 8* |*🔵 a 1* |
+| 6 |🟢 a 7 |🟢 b 8 |🟠 b 6 |🟠 a 1 |Break |*🔵 a 1* |*🔵 b 2* |
+| 7 |🟢 b 8 |🟠 a 1 |🟢 a 7 |🟠 b 2 |Break |*🔵 b 2* |*🔵 a 3* |
+| 8 |🟠 a 1 |🟠 b 2 |🟢 b 8 |🟢 a 3 |Break |*🔵 a 3* |*🔵 b 4* |
+| ... |
+
+Here we can now keep everything the same and just specify ``Phases To Order Randomize: {Phase 1, Phase 2}``, which yields:
+
+| participant # |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 |🟠 a 1 |🟠 b 2 |🟢 b 8 |🟢 a 3 |Break |*🔵 a 3* |*🔵 b 4* |
+| 1 |*🔵 b 4* |*🔵 a 5* |Break |🟠 b 2 |🟢 a 3 |🟠 a 1 |🟢 b 4 |
+| 2 |🟢 a 3 |🟢 b 4 |🟠 b 2 |🟠 a 5 |Break |*🔵 a 5* |*🔵 b 6* |
+| 3 |*🔵 b 6* |*🔵 a 7* |Break |🟢 b 4 |🟠 a 5 |🟢 a 3 |🟠 b 6 |
+| 4 |🟠 a 5 |🟠 b 6 |🟢 b 4 |🟢 a 7 |Break |*🔵 a 7* |*🔵 b 8* |
+| 5 |*🔵 b 8* |*🔵 a 1* |Break |🟠 b 6 |🟢 a 7 |🟠 a 5 |🟢 b 8 |
+| 6 |🟢 a 7 |🟢 b 8 |🟠 b 6 |🟠 a 1 |Break |*🔵 a 1* |*🔵 b 2* |
+| 7 |*🔵 b 2* |*🔵 a 3* |Break |🟢 b 8 |🟠 a 1 |🟢 a 7 |🟠 b 2 |
+| 8 |🟠 a 1 |🟠 b 2 |🟢 b 8 |🟢 a 3 |Break |*🔵 a 3* |*🔵 b 4* |
+| ... |
+
+What is still suboptimal is that the ``nonCombined`` factor (Number) is not coordinated between the phases. If we think of it as some task the participants have to do, that we would want participants to only see each number at most once (in both phases together) but this cannot be coordinated between two phases as of now. See, for example, participant # 1, who sees number 4 two times but never, e.g., 2.
+This problem is tackled in the next section, by using the **``ConditionSortingCallback()``** function.
+
+# ``ConditionSortingCallback()`` to manually sort everything as needed
+
+
 
 
 
