@@ -1164,7 +1164,7 @@ We use a similar setup as above:
 Additionally we implement the callback function
 
 ```c++
-TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCondition*>& Conditions)
+TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCondition*>& Conditions) const
 {
 	TArray<USFCondition*> ReorderedConditions;
 	for(USFCondition* Condition : Conditions)
