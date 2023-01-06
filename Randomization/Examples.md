@@ -57,9 +57,7 @@ If you have two factors and want to fully randomize the order of presentation of
 					"Name": "OtherData",
 					"Required": false
 				}
-			],
-			"Number Of Repetitions": 1,
-			"TypeOfRepetition": "SameOrder"
+			]
 		}
 	],
 	"PhasesToOrderRandomize": [],
@@ -157,9 +155,7 @@ If you want to have, e.g., always the same colored repetition next to each other
 					"Name": "OtherData",
 					"Required": false
 				}
-			],
-			"Number Of Repetitions": 1,
-			"TypeOfRepetition": "SameOrder"
+			]
 		}
 	],
 	"PhasesToOrderRandomize": [],
@@ -267,9 +263,7 @@ If you want to have, e.g., always the same colored repetition next to each other
 					"Name": "OtherData",
 					"Required": false
 				}
-			],
-			"Number Of Repetitions": 1,
-			"TypeOfRepetition": "SameOrder"
+			]
 		}
 	],
 	"PhasesToOrderRandomize": [],
@@ -379,9 +373,7 @@ If you want to have, e.g., always the same colored repetition next to each other
 					"Name": "OtherData",
 					"Required": false
 				}
-			],
-			"Number Of Repetitions": 1,
-			"TypeOfRepetition": "SameOrder"
+			]
 		}
 	],
 	"PhasesToOrderRandomize": [],
@@ -487,9 +479,7 @@ If the letter in the above example should simply add some randomness ut not incr
 					"Name": "OtherData",
 					"Required": false
 				}
-			],
-			"Number Of Repetitions": 1,
-			"TypeOfRepetition": "SameOrder"
+			]
 		}
 	],
 	"PhasesToOrderRandomize": [],
@@ -587,9 +577,7 @@ So far all examples only used ``Within``-subject factors, where each participant
 					"Name": "OtherData",
 					"Required": false
 				}
-			],
-			"Number Of Repetitions": 1,
-			"TypeOfRepetition": "SameOrder"
+			]
 		}
 	],
 	"PhasesToOrderRandomize": [],
@@ -629,13 +617,15 @@ So far all examples only used ``Within``-subject factors, where each participant
 
 Notice that every participants either only sees ``1``s or ``2``s.
 
-# Repetition defined per Phase
 
-The following three examples all use the same factors:
+
+# Repeating all conditions multiple times
+
+This can be done by adding an additional repetition factor that either **makes sure that first all conditions are seen before they are repeated (and the same for the third etc. repetition)**
 
 * Color: {🟠, 🔵} (``Mixing Order: RandomOrder``)
-* Number: {1, 2} (``Mixing Order: RandomOrder``)
-* ``Number Of Repetitions: 2``
+* Letter: {a, b} (``Mixing Order: RandomOrder``)
+* Repetition: {1, 2} (``Mixing Order: InOrder``)
 
 <p>
 <details>
@@ -668,12 +658,22 @@ The following three examples all use the same factors:
 					"NonCombined": false
 				},
 				{
-					"FactorName": "Number",
+					"FactorName": "Letter",
+					"Levels": [
+						"a",
+						"b"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "Repetition",
 					"Levels": [
 						"1",
 						"2"
 					],
-					"MixingOrder": "RandomOrder",
+					"MixingOrder": "InOrder",
 					"Type": "Within",
 					"NonCombined": false
 				}
@@ -687,9 +687,7 @@ The following three examples all use the same factors:
 					"Name": "OtherData",
 					"Required": false
 				}
-			],
-			"Number Of Repetitions": 2,
-			"TypeOfRepetition": "SameOrder"
+			]
 		}
 	],
 	"PhasesToOrderRandomize": [],
@@ -716,47 +714,116 @@ The following three examples all use the same factors:
 </details>
 </p>
 
-## ``Type of Repetition: SameOrder``
-
 | participant # |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 |
-| 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 |
-| 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 |
-| 3 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 |
-| 4 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 |
+| 0 | 🟠 a 1 | 🟠 b 1 | 🔵 b 1 | 🔵 a 1 | 🟠 b 2 | 🔵 a 2 | 🟠 a 2 | 🔵 b 2 |
+| 1 | 🟠 b 1 | 🔵 a 1 | 🟠 a 1 | 🔵 b 1 | 🔵 a 2 | 🔵 b 2 | 🟠 b 2 | 🟠 a 2 |
+| 2 | 🔵 a 1 | 🔵 b 1 | 🟠 b 1 | 🟠 a 1 | 🔵 b 2 | 🟠 a 2 | 🔵 a 2 | 🟠 b 2 |
+| 3 | 🔵 b 1 | 🟠 a 1 | 🔵 a 1 | 🟠 b 1 | 🟠 a 2 | 🟠 b 2 | 🔵 b 2 | 🔵 a 2 |
+| 4 | 🟠 a 1 | 🟠 b 1 | 🔵 b 1 | 🔵 a 1 | 🟠 b 2 | 🔵 a 2 | 🟠 a 2 | 🔵 b 2 |
 | ... |
 
-The second four conditions are exactly in the same order as the first four.
+But repetition can, e.g., also be configured to always **show all 🟠 conditions and their repetitions together**
 
-## ``Type of Repetition: SameOrder``
+* Color: {🟠, 🔵} (``Mixing Order: EnBlock``)
+* Letter: {a, b} (``Mixing Order: RandomOrder``)
+* Repetition: {1, 2} (``Mixing Order: InOrder``)
+
+<p>
+<details>
+<summary>StudySetup.json</summary>
+
+```
+{
+	"Phases": [
+		{
+			"Name": "Study",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"/Game/Maps/StudyMap1"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				},
+				{
+					"FactorName": "TextColor",
+					"Levels": [
+						"Orange",
+						"Blue"
+					],
+					"MixingOrder": "EnBlock",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "Letter",
+					"Levels": [
+						"a",
+						"b"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "Repetition",
+					"Levels": [
+						"1",
+						"2"
+					],
+					"MixingOrder": "InOrder",
+					"Type": "Within",
+					"NonCombined": false
+				}
+			],
+			"Dependent Variables": [
+				{
+					"Name": "Visibility",
+					"Required": true
+				},
+				{
+					"Name": "OtherData",
+					"Required": false
+				}
+			]
+		}
+	],
+	"PhasesToOrderRandomize": [],
+	"FadeConfig":
+	{
+		"StartFadedOut": true,
+		"FadeDuration": 2,
+		"FadeOutDuration": 1,
+		"FadeColor": "(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"
+	},
+	"ExperimenterViewConfig":
+	{
+		"ShowHUD": true,
+		"ShowConditionsPanelByDefault": false,
+		"ShowExperimenterViewInSecondWindow": false,
+		"SecondWindowSizeX": 1920,
+		"SecondWindowSizeY": 1080,
+		"SecondWindowPosX": 1920,
+		"SecondWindowPosY": 0
+	},
+	"UseGazeTracker": "NotTracking"
+}
+```
+</details>
+</p>
 
 | participant # |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 |
-| 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 |
-| 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 |
-| 3 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 |
-| 4 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 |
+| 0 | 🟠 a 1 | 🟠 b 1 | 🟠 b 2 | 🟠 a 2 | 🔵 b 1 | 🔵 a 1 | 🔵 a 2 | 🔵 b 2 |
+| 1 | 🔵 b 1 | 🔵 a 1 | 🔵 a 2 | 🔵 b 2 | 🟠 a 1 | 🟠 b 1 | 🟠 b 2 | 🟠 a 2 |
+| 2 | 🟠 a 1 | 🟠 b 1 | 🟠 b 2 | 🟠 a 2 | 🔵 b 1 | 🔵 a 1 | 🔵 a 2 | 🔵 b 2 |
 | ... |
 
-Note that all conditions are seen exactly once before they are repeated a second time.
-
-## ``Type of Repetition: Fully Random``
-
-| participant # |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 🟠 1 | 🟠 1 | 🔵 2 | 🟠 2 | 🔵 2 | 🟠 2 | 🔵 1 | 🔵 1 |
-| 1 | 🟠 1 | 🟠 2 | 🟠 1 | 🟠 2 | 🔵 2 | 🔵 1 | 🔵 2 | 🔵 1 |
-| 2 | 🟠 2 | 🟠 2 | 🟠 1 | 🔵 1 | 🟠 1 | 🔵 1 | 🔵 2 | 🔵 2 |
-| 3 | 🟠 2 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 | 🟠 1 | 🔵 2 |
-| 4 | 🔵 1 | 🔵 1 | 🟠 2 | 🔵 2 | 🟠 2 | 🔵 2 | 🟠 1 | 🟠 1 |
-| 5 | 🔵 1 | 🔵 2 | 🔵 1 | 🔵 2 | 🟠 2 | 🟠 1 | 🟠 2 | 🟠 1 |
-| 6 | 🔵 2 | 🔵 2 | 🔵 1 | 🟠 1 | 🔵 1 | 🟠 1 | 🟠 2 | 🟠 2 |
-| 7 | 🔵 2 | 🟠 1 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 | 🔵 1 | 🟠 2 |
-| 8 ... |
-
-Note that this requires not a multiple of 4 but of 8 participants to be perfectly counterbalanced. Also when randomizig it it not considered that 🟠 1 = 🟠 1 they are treated as two separate conditions in the Latin Square, which can yield some patterns reoccuring more often then others. However, it is hard to tell what a better solution would be.
+Note that in this case there is more regularity then we would like to have due to the layout and usage of the Latin Square table. If this is a problem, you have to use the ``ConditionSortingCallback()`` function (see below).
 
 
 
@@ -764,6 +831,9 @@ Note that this requires not a multiple of 4 but of 8 participants to be perfectl
 
 
 
+
+
+---
 ---
 Here is the python script used to automatically generate those tables. In case new examples should be added:
 <p>
