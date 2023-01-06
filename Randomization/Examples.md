@@ -91,11 +91,11 @@ If you have two factors and want to fully randomize the order of presentation of
 
 | participant # |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| 0   | 🟠 1 | 🟠 2 | 🟢 2 | 🔵 1 | 🟢 1 | 🔵 2 | 
-| 1   | 🟠 2 | 🔵 1 | 🟠 1 | 🔵 2 | 🟢 2 | 🟢 1 | 
-| 2   | 🔵 1 | 🔵 2 | 🟠 2 | 🟢 1 | 🟠 1 | 🟢 2 | 
-| 3   | 🔵 2 | 🟢 1 | 🔵 1 | 🟢 2 | 🟠 2 | 🟠 1 | 
-| 4   | 🟢 1 | 🟢 2 | 🔵 2 | 🟠 1 | 🔵 1 | 🟠 2 | 
-| 5   | 🟢 2 | 🟠 1 | 🟢 1 | 🟠 2 | 🔵 2 | 🔵 1 | 
+| 0 | 🟠1 | 🟠2 | 🟢2 | 🔵1 | 🟢1 | 🔵2 |
+| 1 | 🟠2 | 🔵1 | 🟠1 | 🔵2 | 🟢2 | 🟢1 |
+| 2 | 🔵1 | 🔵2 | 🟠2 | 🟢1 | 🟠1 | 🟢2 |
+| 3 | 🔵2 | 🟢1 | 🔵1 | 🟢2 | 🟠2 | 🟠1 |
+| 4 | 🟢1 | 🟢2 | 🔵2 | 🟠1 | 🔵1 | 🟠2 |
+| 5 | 🟢2 | 🟠1 | 🟢1 | 🟠2 | 🔵2 | 🔵1 |
 
 After that orders will be repeated, so having a multiple of 6 participants would be recommended here. *Also note that you can nicely see the ``Balanced Latin Square`` structure here, having in each column and row each condition exactly once and having each condition being followed by every other condition exactly once!*
