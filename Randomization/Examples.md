@@ -419,8 +419,8 @@ Note that we only have 6 conditions here per run, instead of the 12 we had in th
 # ``Between``-subject factors
 So far all examples only used ``Within``-subject factors, where each participant should see all levels. However, ``Type`` can also be set to ``Between`` such that every participant only sees exactly one level of this factor.
 
-* Color: {🟠, 🔵, 🟢} (``Mixing Order: EnBlock``, ``Type: Within``)
-* Number: {1, 2} (``Mixing Order: InOrder``, ``Type: Between``)
+* Color: {🟠, 🔵, 🟢} (``Mixing Order: RandomOrder``, ``Type: Within``)
+* Number: {1, 2} (``Mixing Order: RandomOrder``, ``Type: Between``)
 
 <p>
 <details>
@@ -449,7 +449,7 @@ So far all examples only used ``Within``-subject factors, where each participant
 						"Blue",
 						"Green"
 					],
-					"MixingOrder": "EnBlock",
+					"MixingOrder": "RandomOrder",
 					"Type": "Within",
 					"NonCombined": false
 				},
