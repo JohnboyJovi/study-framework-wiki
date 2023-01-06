@@ -2,7 +2,7 @@ There are three different levels where randomization can be applied (see below)
 
 All randomization is seeded with the participant id, so with the same participant id you will always see the same order. Also the study phase index is used, so two exactly identical study phases (following eachother) will have different orders for the same participant.
 
-*Some examples can be found here: [Randomization/Examples](Randomization/Examples)
+* Some examples can be found here: [Randomization/Examples](Randomization/Examples)
 
 
 # Study Factor
