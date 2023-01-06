@@ -1010,7 +1010,7 @@ In this example we have split our task in two phases with a break in between:
 
 | participant # |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 🟠 a 1 | 🟠 b 2 | 🟢 b 8 | 🟢 a 3 |Break |* 🔵 a 3* |* 🔵 b 4* |
+| 0 | 🟠 a 1 | 🟠 b 2 | 🟢 b 8 | 🟢 a 3 |Break |* 🔵 a 3* |*🔵 b 4* |
 | 1 | 🟠 b 2 | 🟢 a 3 | 🟠 a 1 | 🟢 b 4 |Break |* 🔵 b 4* |* 🔵 a 5* |
 | 2 | 🟢 a 3 | 🟢 b 4 | 🟠 b 2 | 🟠 a 5 |Break |* 🔵 a 5* |* 🔵 b 6* |
 | 3 | 🟢 b 4 | 🟠 a 5 | 🟢 a 3 | 🟠 b 6 |Break |* 🔵 b 6* |* 🔵 a 7* |
