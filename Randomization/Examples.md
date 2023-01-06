@@ -415,3 +415,102 @@ If the letter in the above example should simply add some randomness ut not incr
 
 
 Note that we only have 6 conditions here per run, instead of the 12 we had in the example above where ``NonCombied`` was not used.
+
+# ``Between``-subject factors
+So far all examples only used ``Within``-subject factors, where each participant should see all levels. However, ``Type`` can also be set to ``Between`` such that every participant only sees exactly one level of this factor.
+
+* Color: {🟠, 🔵, 🟢} (``Mixing Order: EnBlock``, ``Type: Within``)
+* Number: {1, 2} (``Mixing Order: InOrder``, ``Type: Between``)
+
+<p>
+<details>
+<summary>StudySetup.json</summary>
+
+```
+{
+	"Phases": [
+		{
+			"Name": "Study",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"/Game/Maps/StudyMap1"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				},
+				{
+					"FactorName": "TextColor",
+					"Levels": [
+						"Orange",
+						"Blue",
+						"Green"
+					],
+					"MixingOrder": "EnBlock",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "Number",
+					"Levels": [
+						"1",
+						"2"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Between",
+					"NonCombined": false
+				}
+			],
+			"Dependent Variables": [
+				{
+					"Name": "Visibility",
+					"Required": true
+				},
+				{
+					"Name": "OtherData",
+					"Required": false
+				}
+			],
+			"Number Of Repetitions": 1,
+			"TypeOfRepetition": "SameOrder"
+		}
+	],
+	"PhasesToOrderRandomize": [],
+	"FadeConfig":
+	{
+		"StartFadedOut": true,
+		"FadeDuration": 2,
+		"FadeOutDuration": 1,
+		"FadeColor": "(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"
+	},
+	"ExperimenterViewConfig":
+	{
+		"ShowHUD": true,
+		"ShowConditionsPanelByDefault": false,
+		"ShowExperimenterViewInSecondWindow": false,
+		"SecondWindowSizeX": 1920,
+		"SecondWindowSizeY": 1080,
+		"SecondWindowPosX": 1920,
+		"SecondWindowPosY": 0
+	},
+	"UseGazeTracker": "NotTracking"
+}
+```
+</details>
+</p>
+
+| participant # |  |  |  |
+| --- | --- | --- | --- |
+| 0 | 🟠 1 | 🔵 1 | 🟢 1 |
+| 1 | 🟠 2 | 🟢 2 | 🔵 2 |
+| 2 | 🟢 1 | 🟠 1 | 🔵 1 |
+| 3 | 🟢 2 | 🔵 2 | 🟠 2 |
+| 4 | 🔵 1 | 🟢 1 | 🟠 1 |
+| 5 | 🔵 2 | 🟠 2 | 🟢 2 |
+| 6 | 🟠 1 | 🔵 1 | 🟢 1 |
+| ... |
+
+Notice that every participants either only sees ``1``s or ``2``s.
