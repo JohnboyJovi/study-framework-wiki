@@ -628,3 +628,81 @@ So far all examples only used ``Within``-subject factors, where each participant
 | ... |
 
 Notice that every participants either only sees ``1``s or ``2``s.
+
+
+
+
+---
+Here is the python script used to automatically generate those tables. In case new examples should be added:
+<p>
+<details>
+<summary>WikiTableGenerator.py</summary>
+
+```
+orange = "🟠" #not shown correctly here but show correctly in gitlab Wiki
+green = "🟢"
+blue = "🔵"
+
+
+def WriteHeader(numberCells):
+  outputlines = []
+  output = "| participant # |"
+  for i in range(numberCells):
+    output += "  |"
+  outputlines.append(output)
+
+  output = "|"
+  for i in range(numberCells+1):
+    output += " --- |"
+  outputlines.append(output)
+  return outputlines
+
+with open('GeneratedDebugRuns.txt') as f:
+    lines = f.readlines()
+
+    outputlines = []
+
+    for line in lines:
+      entries = line.split("\t")
+      if len(outputlines) == 0:
+        outputlines = WriteHeader(len(entries)-1)
+      outLine = "| "+str(entries[0])+" |"
+      for i in range(1, len(entries)):
+        condition = entries[i]
+        
+        #color
+        if "Green" in condition:
+          outLine += " " + green
+        elif "Orange" in condition:
+          outLine += " " + orange
+        elif "Blue" in condition:
+          outLine += " " + blue
+
+        #number
+        if "_1" in condition:
+          outLine += " 1"
+        elif "_2" in condition:
+          outLine += " 2"
+
+        #letter
+        if "_a" in condition:
+          outLine += " a"
+        elif "_b" in condition:
+          outLine += " b"
+        elif "_c" in condition:
+          outLine += " c"
+
+        outLine += " |"
+      outputlines.append(outLine)
+
+    print(outputlines)
+    outFile = open('table.txt', 'w', encoding="utf-8")
+    for outline in outputlines:    
+      outFile.write(outline+"\n")
+    outFile.close()
+
+              
+
+```
+</details>
+</p>
