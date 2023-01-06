@@ -1041,10 +1041,164 @@ This problem is tackled in the next section, by using the **``ConditionSortingCa
 
 # ``ConditionSortingCallback()`` to manually sort everything as needed
 
+You first have to create a c++ class derived from ``ASFStudySetup``, which implements a single method ``virtual TArray<USFCondition*> ConditionSortingCallback(const TArray<USFCondition*>& Conditions);``
 
+We use a similar setup as above:
 
+* Phase 1
+  * Color: {🟠, 🟢, 🔵} (``Mixing Order: EnBlock``)
+  * Letter: {a, b} (``Mixing Order: RandomOrder``)
+  * Number: {1, 2, 3, 4, 5, 6, 7, 8} (``NonCombined: true``) This could, e.g., be different task participants have to do
+* Break
 
+<p>
+<details>
+<summary>StudySetup.json</summary>
 
+```
+{
+	"Phases": [
+		{
+			"Name": "Phase1",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"/Game/Maps/StudyMap1"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				},
+				{
+					"FactorName": "TextColor",
+					"Levels": [
+						"Orange",
+						"Green",
+						"Blue"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "letter",
+					"Levels": [
+						"a",
+						"b"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false
+				},
+				{
+					"FactorName": "number",
+					"Levels": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": true
+				}
+			],
+			"Dependent Variables": [
+				{
+					"Name": "Visibility",
+					"Required": true
+				},
+				{
+					"Name": "OtherData",
+					"Required": false
+				}
+			]
+		},
+		{
+			"Name": "Break",
+			"Factors": [
+				{
+					"FactorName": "Map",
+					"Levels": [
+						"BreakMap"
+					],
+					"MixingOrder": "RandomOrder",
+					"Type": "Within",
+					"NonCombined": false,
+					"MapFactor": true
+				}
+			],
+			"Dependent Variables": []
+		}
+	],
+	"PhasesToOrderRandomize": [],
+	"FadeConfig":
+	{
+		"StartFadedOut": true,
+		"FadeDuration": 2,
+		"FadeOutDuration": 1,
+		"FadeColor": "(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"
+	},
+	"ExperimenterViewConfig":
+	{
+		"ShowHUD": true,
+		"ShowConditionsPanelByDefault": false,
+		"ShowExperimenterViewInSecondWindow": false,
+		"SecondWindowSizeX": 1920,
+		"SecondWindowSizeY": 1080,
+		"SecondWindowPosX": 1920,
+		"SecondWindowPosY": 0
+	},
+	"UseGazeTracker": "NotTracking"
+}
+```
+</details>
+</p>
+
+Additionally we implement the callback function
+
+```c++
+TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCondition*>& Conditions)
+{
+	TArray<USFCondition*> ReorderedConditions;
+	for(USFCondition* Condition : Conditions)
+	{
+		if(Condition->PhaseName == "Break")
+		{
+			ReorderedConditions.Insert(Condition, 4);
+		}
+		else
+		{
+			ReorderedConditions.Add(Condition);
+		}
+	}
+	return ReorderedConditions;
+}
+```
+
+| participant # |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 |🟠 a 1 |🟠 b 2 |🟢 b 8 |🟢 a 3 |Break |🔵 a 7 |🔵 b 4 |
+| 1 |🟠 b 2 |🟠 a 3 |🔵 a 1 |🔵 b 4 |Break |🟢 b 8 |🟢 a 5 |
+| 2 |🔵 a 3 |🔵 b 4 |🟠 b 2 |🟠 a 5 |Break |🟢 a 1 |🟢 b 6 |
+| 3 |🔵 b 4 |🔵 a 5 |🟢 a 3 |🟢 b 6 |Break |🟠 b 2 |🟠 a 7 |
+| 4 |🟢 a 5 |🟢 b 6 |🔵 b 4 |🔵 a 7 |Break |🟠 a 3 |🟠 b 8 |
+| 5 |🟢 b 6 |🟢 a 7 |🟠 a 5 |🟠 b 8 |Break |🔵 b 4 |🔵 a 1 |
+| 6 |🟠 a 7 |🟠 b 8 |🟢 b 6 |🟢 a 1 |Break |🔵 a 5 |🔵 b 2 |
+| 7 |🟠 b 8 |🟠 a 1 |🔵 a 7 |🔵 b 2 |Break |🟢 b 6 |🟢 a 3 |
+| 8 |🔵 a 1 |🔵 b 2 |🟠 b 8 |🟠 a 3 |Break |🟢 a 7 |🟢 b 4 |
+| 9 |🔵 b 2 |🔵 a 3 |🟢 a 1 |🟢 b 4 |Break |🟠 b 8 |🟠 a 5 |
+| 10 |🟢 a 3 |🟢 b 4 |🔵 b 2 |🔵 a 5 |Break |🟠 a 1 |🟠 b 6 |
+| 11 |🟢 b 4 |🟢 a 5 |🟠 a 3 |🟠 b 6 |Break |🔵 b 2 |🔵 a 7 |
+
+So here we moved the break phase to the point where two colors are done. 
+This callback function obviously also yields a lot more possibilities, just make sure that you take care for the counterbalancing when extensively using it.
 
 
 
@@ -1057,7 +1211,7 @@ Here is the python script used to automatically generate those tables. In case n
 <summary>WikiTableGenerator.py</summary>
 
 ```
-orange = "🟠" #not shown correctly here but show correctly in gitlab Wiki
+orange = "🟠" #not shown correctly in IDLE but shown correctly in gitlab Wiki
 green = "🟢"
 blue = "🔵"
 
@@ -1087,30 +1241,38 @@ with open('GeneratedDebugRuns.txt') as f:
       outLine = "| "+str(entries[0])+" |"
       for i in range(1, len(entries)):
         condition = entries[i]
-        
+
+        entryString = ""
         #color
         if "Green" in condition:
-          outLine += " " + green
+          entryString += green
         elif "Orange" in condition:
-          outLine += " " + orange
+          entryString += orange
         elif "Blue" in condition:
-          outLine += " " + blue
-
-        #number
-        if "_1" in condition:
-          outLine += " 1"
-        elif "_2" in condition:
-          outLine += " 2"
+          entryString += blue
 
         #letter
         if "_a" in condition:
-          outLine += " a"
+          entryString += " a"
         elif "_b" in condition:
-          outLine += " b"
+          entryString += " b"
         elif "_c" in condition:
-          outLine += " c"
+          entryString += " c"
 
-        outLine += " |"
+        #number
+        for i in range(1,9):
+          if "_"+str(i) in condition:
+            entryString += " " + str(i)
+
+        #phases
+        if "Phase2" in condition:
+          #make it italic
+          entryString = "*" + entryString + "*"
+        elif "Break" in condition:
+          entryString = "Break"
+    
+
+        outLine += entryString + " |"
       outputlines.append(outLine)
 
     print(outputlines)
@@ -1118,9 +1280,7 @@ with open('GeneratedDebugRuns.txt') as f:
     for outline in outputlines:    
       outFile.write(outline+"\n")
     outFile.close()
-
               
-
 ```
 </details>
 </p>
