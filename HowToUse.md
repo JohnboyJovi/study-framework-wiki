@@ -12,6 +12,9 @@
 ## Setup Phases and Factors etc.
 * This framework requires a Setup map (e.g., simply the Main level) which is started and contains a study setup, but is not part of the study itself. Add a SFStudySetup (``StudyFrameworkPlugin C++ Classes -> StudyFrameworkPlugin -> Public -> SFStudySetup``) actor to this level. In the properties section of this actor we can set up the study.  Whenever a property of the StudySetup is changed, this change will automatically be saved to a JSON file, by default "StudySetup.json" located in the ```[ProjectDir]/StudyFramework``` folder. You can switch between different setup files, using the ```Select Setup File```-function. Note: Setup files have to be located on the same drive as the project folder.\
 ![Select Setup File](uploads/741725a5091a4143c1549b2050ae40e6/grafik.png)
+* Add independent variables. Optionally, these can be automatically asked at the beginning of a study run for each participant by checking (1), where the question/prompt is defined by (2) and in case of a multiple choice question the answer buttons are defined by (3).
+![setup_vars](uploads/12eed40aae5d42b18ec187387f3f42b5/setup_vars.png)
+![age_question](uploads/833fbf53af9fd2c4456ae3672c42178e/age_question.png)
 * Add phases to this setup\
  ![image](uploads/06e2902e6cda1d9dc7994f03ff937145/image.png)\
 and select ``SFStudyPhase`` instead of ``None`` (phases can be used if some blocks of the study should always come in the same order, e.g., always start with a warm-up phase or always end with a nice end scene), at least one phase needs to be present!
@@ -40,7 +43,7 @@ If you want to reorder phases just pull them (1) to another location, since new 
 
 * Start the main/setup map
 * If the last study run wasn't finished (all conditions with required dependent variables were successfully finished) you get different option to proceed:\
-![image](uploads/238c33e5b17d55c7fe9304f271d784f6/image.png)\
+![beginning_study_question](uploads/07e884b868c04941f2ee6fc29f813e01/beginning_study_question.png)\
 Choose what is appropriate. This is especially helpful if something crashed and you want to continue the study run of a participant
 * If you use the same environment for the study you degugged it in, click:\
 ![image](uploads/ce7df26a0703d64e4a4d7cf49713f928/image.png)\
