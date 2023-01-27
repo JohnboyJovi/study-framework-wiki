@@ -24,13 +24,13 @@ After you designed your study it is time to set it up. The following section wil
    - Set up a [Foodle](https://terminplaner6.dfn.de/en) or [Doodle](https://doodle.com/en/) or something similar to schedule appointments with your participants.
    - Send an [invitation mail](StudyProcedure/Invitation Mail) to potential participants, share it on social media, and via posters.
 2. Introductory Text
-   - Write a text informing participants about the general procedure of the study. Do not give away details that might bias the outcome. It is also totally fine if users do not know what to pay attention to.
+   - Write a [text](StudyProcedure/Explaining Texts) informing participants about the general procedure of the study. Do not give away details that might bias the outcome. It is also totally fine if users do not know what to pay attention to.
 3. Informed Consent
    - Prepare the [informed consent](StudyProcedure/Informed Content) which participants need to sign up front after reading the general introductory text. Keep all the signed copies of it for 10 years!
 4. Demographics
    - Prepare a demographics [questionnaire](StudyProcedure/Questionnaires) as the first questionnaire to be filled out prior to the actual study.
 5. Task Description
-   - If not mixed with the introductory text, prepare a task description explaining the interaction and navigation controls in detail as well as the actual user task. Use figures to underline your descriptions.
+   - If not mixed with the introductory text, [prepare a task description](StudyProcedure/Explaining Texts) explaining the interaction and navigation controls in detail as well as the actual user task. Use figures to underline your descriptions.
 6. Questionnaires
    - Prepare [questionnaire](StudyProcedure/Questionnaires) to be asked before, between, and after the various conditions, you test.
    - Whenever possible use standardized questionnaires cited in the literature. 
