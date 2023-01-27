@@ -20,3 +20,7 @@ This is an example of an invitation mail text. Feel free to adapt it to your nee
 > 
 > Best regards, 
 > {+ XXX +}
+
+
+
+Go back to the [Study Procedure](StudyProcedure).
