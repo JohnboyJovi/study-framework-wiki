@@ -14,3 +14,7 @@ Below are different examples you may use provided as XML files to directly load 
 - [Temple Presence Inventory (TPI)](uploads/cc699644d4d5bd8d9774d2ed78f7362e/package_TemplePresenceInventory.xml) by [Lombard et al.](http://matthewlombard.com/research/p2_ab.html)
 - [NASA TLX](uploads/98917d8bd95c1a0c4c0e59ce08e9546d/package_NASA_TLX.xml) to rate workload, [more information here](https://humansystems.arc.nasa.gov/groups/tlx/)
 - [Santa Barbara Sense of Direction (SBSOD)](uploads/d6d04d15af089c00eb6ccfbba700a590/package_SBSOD_Pretest.xml) by [Hegarty et al.](https://hegarty-lab.psych.ucsb.edu/node/226)
+
+
+|:arrow_left: [Go back to Study Procedure](StudyProcedure)|
+|--------------:|
