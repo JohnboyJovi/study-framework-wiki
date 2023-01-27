@@ -8,9 +8,9 @@ For setting up the questionnaires rely on standardized questionnaires in your fi
 
 Below are different examples you may use provided as XML files to directly load into SoSciSurvey.
 
-- [package_Demographics.xml](uploads/664aa2ac49fa53861bfc0360ac91cf48/package_Demographics.xml) - add your own questions in case you are interested in a specific feature of your participants
-- [package_SimulatorSicknessQuestionnaire.xml](uploads/2a117c6241d96f33fbbfedb146688cba/package_SimulatorSicknessQuestionnaire.xml) by [Kennedy et al.](doi.org/10.1207/s15327108ijap0303_3) or in case this one is too long as simulator sickness is not in focus we recommend the short [package_DiscomfortScore.xml](uploads/62259e1d9c8819474b6422aaae5cf8a2/package_DiscomfortScore.xml) by [Fernandes et al.](doi.org/10.1109/3DUI.2016.7460053)
-- [package_igroupPresenceQuestionnaire.xml](uploads/85faf404124d694f949659adbb33b22b/package_igroupPresenceQuestionnaire.xml)
-- [package_TemplePresenceInventory.xml](uploads/cc699644d4d5bd8d9774d2ed78f7362e/package_TemplePresenceInventory.xml)
-- [package_NASA_TLX.xml](uploads/98917d8bd95c1a0c4c0e59ce08e9546d/package_NASA_TLX.xml)
-- [package_SBSOD_Pretest.xml](uploads/d6d04d15af089c00eb6ccfbba700a590/package_SBSOD_Pretest.xml)
+- [Demographics](uploads/664aa2ac49fa53861bfc0360ac91cf48/package_Demographics.xml) - add your own questions in case you are interested in a specific feature of your participants
+- [Simulator Sickness Questionnaire](uploads/2a117c6241d96f33fbbfedb146688cba/package_SimulatorSicknessQuestionnaire.xml) by [Kennedy et al.](www.doi.org/10.1207/s15327108ijap0303_3) or in case this one is too long as simulator sickness is not in focus we recommend the short [Discomfort Score](uploads/62259e1d9c8819474b6422aaae5cf8a2/package_DiscomfortScore.xml) by [Fernandes et al.](www.doi.org/10.1109/3DUI.2016.7460053)
+- [Igroup Presence Questionnaire (IPQ)](uploads/85faf404124d694f949659adbb33b22b/package_igroupPresenceQuestionnaire.xml) to rate the sense of presence, [more infos here](http://www.igroup.org/pq/ipq/index.php)
+- [Temple Presence Inventory (TPI)](uploads/cc699644d4d5bd8d9774d2ed78f7362e/package_TemplePresenceInventory.xml) by [Lombard et al.](http://matthewlombard.com/research/p2_ab.html)
+- [NASA TLX](uploads/98917d8bd95c1a0c4c0e59ce08e9546d/package_NASA_TLX.xml) to rate workload, [more information here](https://humansystems.arc.nasa.gov/groups/tlx/)
+- [Santa Barbara Sense of Direction (SBSOD)](uploads/d6d04d15af089c00eb6ccfbba700a590/package_SBSOD_Pretest.xml) by [Hegarty et al.](https://hegarty-lab.psych.ucsb.edu/node/226)
