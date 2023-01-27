@@ -4,18 +4,24 @@ This is an example of an invitation mail text. Feel free to adapt it to your nee
 > 
 > I would like to invite you to participate in an upcoming user study for my {+ bachelor's/master’s/doctoral thesis +} exploring {+ topic X+}.
 > 
-> The study will take place from {+ month, start day +} to {+ month, end day +} in the VR Lab located at Kopernikusstraße 6. You will be picked up at the entrance door of the building. Each session will take around {+ X +} minutes to complete.
+> The study will take place from {+ month, start day +} to {+ month, end day +} in the VR Lab located at Kopernikusstraße 6. You will be picked up at the entrance door of the building. Each session will take around {+ ____ +} minutes to complete.
 > 
 > The time slots for the study can be found in the {+ Foodle/Doodle +} link: {+ Insert link here +} 
 > For our convenience, please cast your vote to the earliest available timeslots possible, and don't forget to hit the submit button on the very far right of the page (horizontal scrolling required).
 > 
-> The pre-requisites for participation are simple:
+> The requirements for participation are:
 > - Fluently speaking and understanding English
+> - Being able to stand unaided for up to {+ ____ +} minutes
 > - Normal depths vision
+> - In case you need those, bring your glasses/contact lenses, etc.
 > - Not being color blind
-> - Being able to stand for up to {+ Y +} minutes
-> - …
+> - Discretion on the study topic and experience
+> - {+ … +}
 > 
+> {+ If you have any further questions, feel free to contact ____  via ____ @vr.rwth-aachen.de anytime. +}
+>
+> {+ Please forward our invitation to colleagues, family, and friends who might be interested in participating. +}
+>
 > I am looking forward to seeing you during my study and greatly appreciate your support!
 > 
 > Best regards, 
