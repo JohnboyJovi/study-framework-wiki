@@ -37,4 +37,4 @@ After you designed your study it is time to set it up. The following section wil
    - Add your own precise questions focusing on your very technique/investigation object. 
    - Add free text fields to ask for reasons for a special vote as well as additional thoughts, recommendations, and ideas.
 7. Interview
-    -  Decide whether you need a structured or semi-structured interview to gain more insight or of the questionnaires are sufficient.
+    -  Decide whether you need a structured or semi-structured interview to gain more insight or if the questionnaires are sufficient.
