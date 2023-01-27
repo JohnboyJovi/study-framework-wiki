@@ -1,5 +1,5 @@
 **User Studies:**
-User studies are a non-trivial, but essential part of our research. After you carefully structured and designed your study (e.g., user task, a decision between within- and between-subjects design, number of conditions, etc.), the framework provided here shall help you with setting up the study code-wise. In addition to this, you require various questionnaires to get more insights into the participant's thoughts and preferences. Information on those can be found [in this separate subsection] (Questionnaires).
+User studies are a non-trivial, but essential part of our research. After you carefully structured and designed your study (e.g., user task, a decision between within- and between-subjects design, number of conditions, etc.), the framework provided here shall help you with setting up the study code-wise. In addition to this, you require various questionnaires to get more insights into the participant's thoughts and preferences. Information on those questionnaires as well as the procedure of a study can be found [in this separate subsection](StudyProcedure).
 
 **Goals of this framework are:**
 * Make it easy to setup/prototype studies
