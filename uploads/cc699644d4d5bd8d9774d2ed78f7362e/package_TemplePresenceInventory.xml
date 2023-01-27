@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE surveyContent SYSTEM "https://www.soscisurvey.de/templates/doctype.survey.dtd">
+<surveyContent version="2.4">
+<program>sosci</program>
+<version>3.4.09</version>
+<timestamp>2023-01-27 06:30:25</timestamp>
+<title>Temple Presence Inventory</title>
+<description />
+<language>eng</language>
+<attributes.specific program="ofb">
+<attr id="language">eng</attr>
+</attributes.specific>
+<section>
+<title>Temple Presence Inventory</title>
+<attributes.specific program="ofb">
+<attr id="id">TP</attr>
+</attributes.specific>
+<question>
+<description>Introtext</description>
+<class>TextContent</class>
+<title>Social Presence</title>
+<explanation>Please chosse the responses that best represent your answers.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">1</attr>
+<attr id="alignment">default</attr>
+<attr id="character">plain</attr>
+</attributes.specific>
+</question>
+<question>
+<description>Social Richness</description>
+<class>polar</class>
+<title>Social Richness</title>
+<explanation>For each of the pairs of words below, please choose the number that best describes your evaluation of the VR experience. </explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">2</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asc</attr>
+<attr id="numbering.start">1</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="input.numbering">sym</attr>
+</attributes.specific>
+<item>
+<text>Personal</text>
+<suffix>Impersonal</suffix>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Sociable</text>
+<suffix>Unsociable</suffix>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Sensitive</text>
+<suffix>Insensitive</suffix>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Lively</text>
+<suffix>Dead</suffix>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Responsive</text>
+<suffix>Unresponsive</suffix>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Emotional</text>
+<suffix>Unemotional</suffix>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+<item>
+<text>Immediate</text>
+<suffix>Remote</suffix>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">7</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>Engagement</description>
+<class>scale</class>
+<title>Engagement</title>
+<explanation>Please choose the responses that best represent your answers.</explanation>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">not at all</li>
+<li i="7">very much</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>To what extent did you feel mentally immersed in the VR experience?</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+<item>
+<text>How involving was the VR experience?</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+</attributes.specific>
+</item>
+<item>
+<text>How completely were your senses engaged?</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+</attributes.specific>
+</item>
+<item>
+<text>To what extent did you experience a sensation of reality?</text>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+</attributes.specific>
+</item>
+<item>
+<text>How relaxing or exciting was the experience? (Please use scale from very relaxing (leftmost) to very exiting (rightmost))</text>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+</attributes.specific>
+</item>
+<item>
+<text>How engaging was the city exploration?</text>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>ActorWithinMedium1</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">never</li>
+<li i="7">always</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>How often did you have the sensation that people you saw/heard could also see/hear you?</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>ActorWithinMedium2</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">none</li>
+<li i="7">very much</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">5</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>To what extent did you feel you could interact with the person or people you saw/heard?</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>ActorWithinMedium3</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">not all all</li>
+<li i="7">very much</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">6</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>How much did it seem as if you and the people you saw/heard both left the places where you were and went to a new place?</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>ActorWithinMedium4</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">not all all</li>
+<li i="7">very much</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">7</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>How much did it seem as if you and the people you saw/heard were together in the same place?</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>ActorWithinMedium5</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">never</li>
+<li i="7">always</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">8</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>How often did it feel as if someone you saw/heard in the environment was talking directly to you?</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>ActorWithinMedium6</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">never</li>
+<li i="7">always</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">9</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>How often did you want to or did you make eye-contact with someone you saw/heard?</text>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>ActorWithinMedium7</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">none</li>
+<li i="7">very much</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">10</attr>
+<attr id="scale.display">complete</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">default</attr>
+</attributes.specific>
+<item>
+<text>Seeing and hearing a person through a medium constitutes an interaction with him or her. How much control over the interaction with the person or people you saw/heard did you feel you had?</text>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+</section>
+</surveyContent>
