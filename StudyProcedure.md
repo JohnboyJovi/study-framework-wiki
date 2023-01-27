@@ -33,7 +33,6 @@ After you designed your study it is time to set it up. The following section wil
    - If not mixed with the introductory text, prepare a task description explaining the interaction and navigation controls in detail as well as the actual user task. Use figures to underline your descriptions.
 6. Questionnaires
    - Prepare [questionnaire](StudyProcedure/Questionnaires) to be asked before, between, and after the various conditions, you test.
-   - Keep these questionnaires as short as possible as having to fill out too many questions becomes cumbersome often leading to less helpful answers. Still, wrap your head around which insights you need. 
    - Whenever possible use standardized questionnaires cited in the literature. 
    - Add your own precise questions focusing on your very technique/investigation object. 
    - Add free text fields to ask for reasons for a special vote as well as additional thoughts, recommendations, and ideas.
