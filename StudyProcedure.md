@@ -26,7 +26,7 @@ After you designed your study it is time to set it up. The following section wil
 2. Introductory Text
    - Write a text informing participants about the general procedure of the study. Do not give away details that might bias the outcome. It is also totally fine if users do not know what to pay attention to.
 3. Informed Consent
-   - Prepare the informed consent which participants need to sign up front after reading the general introductory text. Keep all the signed copies of it for 10 years!
+   - Prepare the [informed consent](StudyProcedure/InformedContent) which participants need to sign up front after reading the general introductory text. Keep all the signed copies of it for 10 years!
 4. Demographics
    - Prepare a demographics questionnaire as the first questionnaire to be filled out prior to the actual study.
 5. Task Description
