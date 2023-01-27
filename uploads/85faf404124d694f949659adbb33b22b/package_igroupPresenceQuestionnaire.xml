@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE surveyContent SYSTEM "https://www.soscisurvey.de/templates/doctype.survey.dtd">
+<surveyContent version="2.4">
+<program>sosci</program>
+<version>3.4.09</version>
+<timestamp>2023-01-27 06:30:37</timestamp>
+<title>igroupPresenceQuestionnaire</title>
+<description />
+<language>eng</language>
+<attributes.specific program="ofb">
+<attr id="language">eng</attr>
+</attributes.specific>
+<section>
+<title>igroup Presence Questionnaire</title>
+<attributes.specific program="ofb">
+<attr id="id">IP</attr>
+</attributes.specific>
+<question>
+<description>Intro</description>
+<class>TextContent</class>
+<title>Presence</title>
+<explanation>Please indicate, whether or not each statement applies to your experience. You can use the whole range of answers. There are no right or wrong answers, only your opinion counts.</explanation>
+<inputPosition>right</inputPosition>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+<attr id="alignment">default</attr>
+<attr id="character">html</attr>
+</attributes.specific>
+</question>
+<question>
+<description>G1</description>
+<class>scale</class>
+<title />
+<explanation />
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">not all all</li>
+<li i="7">very much</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">2</attr>
+<attr id="pos">2</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>In the computer-generated world, I had a sense of "being there".</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>SP1</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">3</attr>
+<attr id="pos">3</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>Somehow I felt that the virtual world surrounded me.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>SP2</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">4</attr>
+<attr id="pos">4</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>I felt like I was just perceiving pictures.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>SP3</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">did not feel</li>
+<li i="7">felt present</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">5</attr>
+<attr id="pos">5</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>I did not feel present in the virtual space.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>SP4</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">6</attr>
+<attr id="pos">6</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>I had a sense of acting in the virtual space, rather than operating something from outside.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>SP5</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">7</attr>
+<attr id="pos">7</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>I felt present in the virtual space.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>INV1</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">extremely aware</li>
+<li i="7">not aware at all</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">8</attr>
+<attr id="pos">8</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>
+<![CDATA[How aware were you of the real world surrounding while navigating in the virtual world? <br>(i.e. sounds, room temperature, other people, etc.)?]]>
+</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>INV2</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">9</attr>
+<attr id="pos">9</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>I was not aware of my real environment.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>INV3</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">10</attr>
+<attr id="pos">10</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>I still paid attention to the real environment.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>INV4</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">11</attr>
+<attr id="pos">11</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>I was completely captivated by the virtual world.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>REAL1</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">completely real</li>
+<li i="7">not real at all</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">12</attr>
+<attr id="pos">12</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>How real did the virtual world seem to you?</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>REAL2</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">not consistent</li>
+<li i="7">very consistent</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">13</attr>
+<attr id="pos">13</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>How much did your experience in the virtual environment seem consistent with your real world experience?</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>REAL3</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">about as real as an imagined world</li>
+<li i="7">indistinguishable from the real world</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">14</attr>
+<attr id="pos">14</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>How real did the virtual world seem to you?</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+<question>
+<description>REAL4</description>
+<class>scale</class>
+<title />
+<explanation />
+<headerRepeat>none</headerRepeat>
+<inputPosition>right</inputPosition>
+<labels>
+<li i="1">fully disagree</li>
+<li i="7">fully agree</li>
+</labels>
+<order>default</order>
+<attributes.specific program="ofb">
+<attr id="id">15</attr>
+<attr id="pos">15</attr>
+<attr id="scale.label_align">eachline</attr>
+<attr id="scale.display">extrema</attr>
+<attr id="displayNumbering">asym</attr>
+<attr id="scale.niveau">7</attr>
+<attr id="restrictions.answered">yes</attr>
+<attr id="alignment">center</attr>
+<attr id="composition">extended</attr>
+</attributes.specific>
+<item>
+<text>The virtual world seemed more realistic than the real world.</text>
+<attributes.specific program="ofb">
+<attr id="id">1</attr>
+<attr id="pos">1</attr>
+</attributes.specific>
+</item>
+</question>
+</section>
+</surveyContent>
