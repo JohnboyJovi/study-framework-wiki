@@ -9,7 +9,7 @@ For setting up the questionnaires rely on standardized questionnaires in your fi
 Below are different examples you may use provided as XML files to directly load into SoSciSurvey.
 
 **Demographics**
-- [Demographics](uploads/664aa2ac49fa53861bfc0360ac91cf48/package_Demographics.xml) - add your own questions in case you are interested in a specific feature of your participants
+- [Demographics](uploads/664aa2ac49fa53861bfc0360ac91cf48/package_Demographics.xml) containing gender, age, dominant hand, vision, VR frequency, and VR usage cause - please add your own questions in case you are interested in a specific feature and pre-knowledge of your participants
 
 **Simulator Sickness**
 - [Simulator Sickness Questionnaire (SSQ)](uploads/2a117c6241d96f33fbbfedb146688cba/package_SimulatorSicknessQuestionnaire.xml) by [Kennedy et al.](https://www.doi.org/10.1207/s15327108ijap0303_3) 
