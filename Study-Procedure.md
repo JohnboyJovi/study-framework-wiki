@@ -21,7 +21,7 @@ After you designed your study it is time to set it up. The following section wil
 1. Scheduling
    - [Block the equipment](https://rwth-aachen.sciebo.de/f/4542196192) in the lab for the course of your study.
    - Set up a [Foodle](https://terminplaner6.dfn.de/en) or [Doodle](https://doodle.com/en/) or something similar to schedule appointments with your participants.
-   - Send an [invitation mail](StudyProcedure/Invitation) to potential participants, share it on social media, and via posters.
+   - Send an [invitation mail](StudyProcedure/Invitation Mail) to potential participants, share it on social media, and via posters.
 2. Introductory Text
    - Write a text informing participants about the general procedure of the study. Do not give away details that might bias the outcome. It is also totally fine if users do not know what to pay attention to.
 3. Informed Consent
