@@ -19,7 +19,7 @@ Below are different examples you may use provided as XML files to directly load 
 - [Igroup Presence Questionnaire (IPQ)](uploads/85faf404124d694f949659adbb33b22b/package_igroupPresenceQuestionnaire.xml) on Spatial Presence, Involvement, and Experienced Realism, see more [info here](http://www.igroup.org/pq/ipq/index.php)
 - [Temple Presence Inventory (TPI)](uploads/cc699644d4d5bd8d9774d2ed78f7362e/package_TemplePresenceInventory.xml) by [Lombard et al.](http://matthewlombard.com/research/p2_ab.html) - Attention: this questionnaire rates different scales of (tele-)presence and our file currently only provides the subscales Social Richness, Engagement (mental immersion), and Social Presence - Actor Within Medium
 
-**Wordload**
+**Workload**
 - [NASA TLX](uploads/98917d8bd95c1a0c4c0e59ce08e9546d/package_NASA_TLX.xml), more [information here](https://humansystems.arc.nasa.gov/groups/tlx/)
 
 **Spatial Awareness**
