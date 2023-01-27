@@ -28,11 +28,11 @@ After you designed your study it is time to set it up. The following section wil
 3. Informed Consent
    - Prepare the [informed consent](StudyProcedure/Informed Content) which participants need to sign up front after reading the general introductory text. Keep all the signed copies of it for 10 years!
 4. Demographics
-   - Prepare a demographics questionnaire as the first questionnaire to be filled out prior to the actual study.
+   - Prepare a demographics [questionnaire](StudyProcedure/Questionnaires) as the first questionnaire to be filled out prior to the actual study.
 5. Task Description
    - If not mixed with the introductory text, prepare a task description explaining the interaction and navigation controls in detail as well as the actual user task. Use figures to underline your descriptions.
 6. Questionnaires
-   - Prepare questionnaires to be asked before, between, and after the various conditions, you test.
+   - Prepare [questionnaire](StudyProcedure/Questionnaires) to be asked before, between, and after the various conditions, you test.
    - Keep these questionnaires as short as possible as having to fill out too many questions becomes cumbersome often leading to less helpful answers. Still, wrap your head around which insights you need. 
    - Whenever possible use standardized questionnaires cited in the literature. 
    - Add your own precise questions focusing on your very technique/investigation object. 
