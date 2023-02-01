@@ -22,6 +22,7 @@ The information will be written out as tab-separated values into a file in the `
 - When an actor/component is added to logging on one map, this will **not** automatically transfer to the other maps. If you want to track a component's / an actor's movements in all maps, you have to add it to logging in each map (see "Tip" below).
 - The logging is only active when a condition is active (namely **not** while fading in / fading out), even though the player can still interact with the game during the fading process. The length of the fade can be specified in the StudySetup object settings (see [HowToUse - Further Setup Options](/HowToUse#further-setup-options)).
 - You can optionally also log custom data into the position log file, like the status of a character. For that attach a ``USFLogCustomDataComponent`` to the actor/component you want to log and then add this ``USFLogCustomDataComponent`` to the logging instead. This component has a member variable ``FString CustomData`` which you can fill (potentially with more data, then just separate entries in the string by ``"\t"``).
+- Remove components if actors/components are destroyed while the map is running, using ``USFLoggingBPLibrary::RemoveComponent``/``USFLoggingBPLibrary::RemoveActor`` or ``Remove Actor/Component from Logging`` in blueprints.
 
 ### Example: Logging the Position of the Player in VR
 
