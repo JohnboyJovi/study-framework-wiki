@@ -52,7 +52,7 @@ so that all data generated during debug runs is removed and the study startes wi
 * In general ``USFGameInstance::Get()`` is your central interface to the study framework, so checkout the docu/comment in SFGameInstance.h under ``Control Study``.
 * Proceed through your conditions by clicking the next button or even better automatically calling ``USFGameInstance::Get()->NextCondition()``
 * By clicking ``Show conditions`` you can see what conditions are planned. Green are those already finished and blue is the current one.
-* Checkout what is logged and were: on the [logging](Logging) Wiki page
+* Checkout what is logged and where: on the [logging](Logging) Wiki page
 
 # How to debug your study
 
