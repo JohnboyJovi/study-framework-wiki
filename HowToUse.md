@@ -33,6 +33,7 @@ Dependent variables represent whatever you want to measure. They should have a u
 If you want to reorder phases just pull them (1) to another location, since new phases can only be added at the end. (Additionally, you can also rearrange them in the json file while the Editor is closed, it will be reloaded on startup)
 
 ## Further Setup Options
+* You can specify independet varaibles that can be asked for at the startup or that can be updated during execution (via ``USFParticipant``) if needed.
 * There are some options with regard to fading between conditions:\
 ![image](uploads/6873bcb8e81e35a6f8a382de8f9f03b3/image.png)
 * There are also some options for configuring the experimenter view (HUD) and potentially showing it on a second window/screen when running experiments in desktop mode:\
@@ -52,7 +53,7 @@ so that all data generated during debug runs is removed and the study startes wi
 * In general ``USFGameInstance::Get()`` is your central interface to the study framework, so checkout the docu/comment in SFGameInstance.h under ``Control Study``.
 * Proceed through your conditions by clicking the next button or even better automatically calling ``USFGameInstance::Get()->NextCondition()``
 * By clicking ``Show conditions`` you can see what conditions are planned. Green are those already finished and blue is the current one.
-* Checkout what is logged and where: on the [logging](Logging) Wiki page
+* Checkout what is logged and where: on the [logging](Logging) Wiki page, this is especially needed when recording data for the dependent variables.
 
 # How to debug your study
 
