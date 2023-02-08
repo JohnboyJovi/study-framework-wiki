@@ -10,7 +10,7 @@
 # Recording Data
 
 * You can record events happening during the execution using ``SFLoggingBPLibrary::LogComment``
-* You can record data for the dependet varaiable specified using ``SFLoggingBPLibrary::LogData`` (you can call this multiple times in one condition which will overwrite the previous value. Only one value per condition can be stored in the phase long tables, so make sure that you combine values into one string if you for example want to store multiple reaction times in one condition.
+* You can record data for the dependet varaiable specified using ``SFLoggingBPLibrary::LogData``  :warning: you can call this multiple times in one condition which will overwrite the previous value. Only one value per condition can be stored in the phase long tables, so make sure that you combine values into one string if you for example want to store multiple reaction times in one condition.
 
 # Position Logging with the Study-Framework
 
