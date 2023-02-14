@@ -18,7 +18,7 @@ Below are different examples - in English only - you may use provided as XML fil
 **Presence in IVEs**
 - [Igroup Presence Questionnaire (IPQ)](uploads/85faf404124d694f949659adbb33b22b/package_igroupPresenceQuestionnaire.xml) on Spatial Presence, Involvement, and Experienced Realism, see more [info here](http://www.igroup.org/pq/ipq/index.php)
 
-**Presence in IVEs**
+**Social Presence**
 - [Temple Presence Inventory (TPI)](uploads/cc699644d4d5bd8d9774d2ed78f7362e/package_TemplePresenceInventory.xml) by [Lombard et al.](http://matthewlombard.com/research/p2_ab.html) - Attention: this questionnaire rates different scales of (tele-)presence and our file currently only provides the subscales Social Richness, Engagement (mental immersion), and Social Presence - Actor Within Medium
 - [Social Presence Inventory for Interactions with Embodied Virtual Agents (SPI-IEVA)](uploads/e8ecbf7fb0a4879ce4383b3d0a09d4b6/package_CombinedSocialPresence.xml) is an inventory based on various standardized questionnaires, using only constructs focussing first on the users own attitudes towards the virtual agents in the scene, followed by questions detailing the experience with the virtual interaction partners. @jonathan.ehret and @Andrea.Boensch are working with it in particular and the questionnaire is still under construction. In case you plan on using it, contact both first and make sure to replace the current "pedestrians" team with an appropriate term for your specific use case.
 
