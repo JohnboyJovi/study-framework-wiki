@@ -37,4 +37,6 @@ After you designed your study it is time to set it up. The following section wil
    - Add your own precise questions focusing on your very technique/investigation object. 
    - Add free text fields to ask for reasons for a special vote as well as additional thoughts, recommendations, and ideas.
 7. Interview
-    -  Decide whether you need a structured or semi-structured interview to gain more insight or if the questionnaires are sufficient.
+    - Decide whether you need a structured or semi-structured interview (probably in the end) to gain more insight or if the questionnaires are sufficient.
+8. Debriefing
+    - After finishing the study, you can and should tell participants what the focus of your study was. However, make sure that they are aware that this information should not be disclosed to people who might still want to participate in the study, to avoid any bias.
