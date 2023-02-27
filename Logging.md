@@ -1,8 +1,8 @@
 # What is logged and where:
 
-* In `StudyFramework/StudyLogs/Phase_[PhaseName].csv` holds for each phase the data of all participants. This is in a format to easily use in statistics tool like `r`.
+* In `StudyFramework/StudyLogs/Phase_[PhaseName].csv` holds for each phase the data of all participants. This is in a format to easily use in statistics tool like *r*.
 * Likewise in `StudyFramework/StudyLogs/Phase_[PhaseName]_[MultiTrialDependentVarName].csv` all data collected for this ``USFMultipleTrialDependentVariable`` in this phase is stored in a similar format
-* both of the above also store for each collected value the phase, factor level and independent variable to facilitate usage in statistics software such as `r` 
+* both of the above also store for each collected value the phase, factor level and independent variable to facilitate usage in statistics software such as *r* 
 * In `StudyFramework/StudyLogs/ParticipantLogs/LogParticipant-[i]` comments (with a preceeding '#'), events (Start condition..) and reported dependent variable values are logged
 * In `StudyFramework/StudyLogs/PositionLogs/PositionLogParticipant-[i]` the position & rotation info of tracked actors/components are logged
 * In `StudyFramework/StudyRuns/LastParticipant.txt` always the last participant that the study was executed and some information on that run is stored.
