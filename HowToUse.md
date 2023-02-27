@@ -21,8 +21,8 @@ and select ``SFStudyPhase`` instead of ``None`` (phases can be used if some bloc
 * Open the phase's details (1) and give it a recognizable name, then add a factor (2)\
 ![image](uploads/d02708b9b1c4ba267fce27c25ad09564/image.png)\
 Factors define the different conditions you want to examine, e.g., in a 2x2 factorial design you have two factors with two levels each giving 4 conditions in total to examine. There are currently two kinds of factors to chose from:
-  * ``SFMapFactor`` specifying which map/maps to use. Exactly one map factor has to be present per phase with at least one level.\
-The names for the levels/maps should be, e.g., ``/Game/Maps/Warmup`` if there is a ``Warmup`` map in a Maps folder in your Content folder.
+  * ``SFMapFactor`` specifying which map/maps to use. Exactly one map factor has to be present per phase with at least one map.\
+For MapFactors you do not specify the factor's ``Levels`` directly but pick levels/maps/worlds for ``Maps``, which then passes it on to the Levels entry internaly *(only available since version v1.1)*.
   * ``SFStudyFactor`` to specify any other factor you want to examine, giving all the levels as ``FString``, which you then can access during running the study by ``USFGameInstance::Get()->GetFactorLevel(FactorName)``
   * Condition orders etc. can be randomized, see the [randomization](Randomization) page
 * Add dependent variables to the phase(1)\
@@ -33,7 +33,7 @@ Dependent variables represent whatever you want to measure in each nondition (co
     * ``USFLoggingBPLibrary::LogData(DependentVariableName, Value)`` (easier to call within a blueprint) 
     * which only take FString for values, so you have to convert it yourself. These are then logged and stored by the system. 
     * Calling these function multiple times for the same variable in the same condition will overwrite the value stored before.
-  * If you want to store multiple results in one condition, e.g., because there are multiple trials, use ``USFMultipleTrialDependentVariable`` (*only available since version v1.1**)
+  * If you want to store multiple results in one condition, e.g., because there are multiple trials, use ``USFMultipleTrialDependentVariable`` *(only available since version v1.1)*
     * For these you should define ``SubVariableNames'' since you want to potentially store multiple values together for one trial (for example: question, response and response time)
     * You should use ``LogTrialData(DependentVarName, Values)`` where ``Values`` is a ``TArray<FString>`` with one entry per ``SubVariable``
     * The data to these is not stored in the ``Phase_[...].csv`` file but in a separate file ``Phase_[...]_[DependentVariableName].csv``
