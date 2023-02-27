@@ -11,8 +11,18 @@
 
 # Recording Data
 
-* You can record events happening during the execution using ``SFLoggingBPLibrary::LogComment``
-* You can record data for the dependet varaiable specified using ``SFLoggingBPLibrary::LogData``  :warning: you can call this multiple times in one condition which will overwrite the previous value. Only one value per condition can be stored in the phase long tables, so make sure that you combine values into one string if you for example want to store multiple reaction times in one condition.
+* You can record events happening during the execution (such as interactions done by the participant etc.) using 
+  * ``USFGameInstance::Get()->LogComment(Comment, bAlsoLogToHUD)``
+  * ``SFLoggingBPLibrary::LogComment(Comment, bAlsoLogToHUD)`` (easier to call within a blueprint)
+* You can record data for the dependent variable specified using
+  * ``USFGameInstance::Get()->LogData(DependentVarName, Value)`` or
+  * ``USFLoggingBPLibrary::LogData(DependentVariableName, Value)`` (easier to call within a blueprint) 
+  * :warning: you can call this multiple times in one condition which will overwrite the previous value. Only one value per condition can be stored in the phase long tables, so make sure that you combine values into one string if you for example want to store multiple reaction times in one condition.
+* You can record data for the multiple trial dependent variable specified using
+  * ``USFGameInstance::Get()->LogTrialData(DependentVarName, Values)`` or
+  * ``USFLoggingBPLibrary::LogTrialData(DependentVariableName, Values)`` (easier to call within a blueprint) 
+
+Also you can use ``USFGameInstance::Get()->LogToHUD(Text)`` to log text into the log pannel of the experimentor view to inform the experimentor about specific things happening or give helpful advices.
 
 # Position Logging with the Study-Framework
 
