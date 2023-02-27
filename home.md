@@ -4,7 +4,7 @@ User studies are a non-trivial, but essential part of our research. After you ca
 **Goals of this framework are:**
 * Make it easy to setup/prototype studies in UE
 * Produce data that is easy to analyze
-* Have similar data for different data (facilitating meta-analyses and sharing analysis tools)
+* Have similar data for different studies (facilitating meta-analyses and sharing analysis tools)
 * Do **not** overengineer
 
 For information on how to use this, go to the [HowToUse-Section](HowToUse)
