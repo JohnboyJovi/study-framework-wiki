@@ -27,7 +27,17 @@ The names for the levels/maps should be, e.g., ``/Game/Maps/Warmup`` if there is
   * Condition orders etc. can be randomized, see the [randomization](Randomization) page
 * Add dependent variables to the phase(1)\
 ![image](uploads/968ed9a94170b6e1ae84a8b92f6902e9/image.png)\
-Dependent variables represent whatever you want to measure. They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. Whenever you have gathered information for that variable, pass it on to the system with ``USFLoggingBPLibrary::LogData(DependentVariableName, Value)`` which only takes FString for values, so you have to convert it yourself. These are then logged and stored by the system. This function can also be called from within a blueprint. 
+Dependent variables represent whatever you want to measure in each nondition (combination of levels for al factors). They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. 
+  * Whenever you have gathered information for that variable, pass it on to the system with
+    * ``USFGameInstance::Get()->LogData(DependentVarName, Value)`` or
+    * ``USFLoggingBPLibrary::LogData(DependentVariableName, Value)`` (easier to call within a blueprint) 
+    * which only take FString for values, so you have to convert it yourself. These are then logged and stored by the system. 
+    * Calling these function multiple times for the same variable in the same condition will overwrite the value stored before.
+  * If you want to store multiple results in one condition, e.g., because there are multiple trials, use ``USFMultipleTrialDependentVariable`` (*only available since version v1.1**)
+    * For these you should define ``SubVariableNames'' since you want to potentially store multiple values together for one trial (for example: question, response and response time)
+    * You should use ``LogTrialData(DependentVarName, Values)`` where ``Values`` is a ``TArray<FString>`` with one entry per ``SubVariable``
+    * The data to these is not stored in the ``Phase_[...].csv`` file but in a separate file ``Phase_[...]_[DependentVariableName].csv``
+    * In the Condition List only the number of recorded trial is shown but not the data itself for better overview
 * This is the required study setup, but there are some more options there to explore.
 * ![image](uploads/ed698d70f2e68dfbc8c895cda36f56a5/image.png)\
 If you want to reorder phases just pull them (1) to another location, since new phases can only be added at the end. (Additionally, you can also rearrange them in the json file while the Editor is closed, it will be reloaded on startup)
