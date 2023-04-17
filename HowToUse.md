@@ -27,7 +27,7 @@ For MapFactors you do not specify the factor's ``Levels`` directly but pick leve
   * Condition orders etc. can be randomized, see the [randomization](Randomization) page
 * Add dependent variables to the phase(1)\
 ![image](uploads/968ed9a94170b6e1ae84a8b92f6902e9/image.png)\
-Dependent variables represent whatever you want to measure in each nondition (combination of levels for al factors). They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. 
+Dependent variables represent whatever you want to measure in each condition (combination of levels for al factors). They should have a unique name (2). Furthermore they can be specified as required (3), which means that a condition cannot be finished without having collected data for that variable. 
   * Whenever you have gathered information for that variable, pass it on to the system with
     * ``USFGameInstance::Get()->LogData(DependentVarName, Value)`` or
     * ``USFLoggingBPLibrary::LogData(DependentVariableName, Value)`` (easier to call within a blueprint) 
@@ -37,6 +37,7 @@ Dependent variables represent whatever you want to measure in each nondition (co
     * For these you should define ``SubVariableNames`` since you want to potentially store multiple values together for one trial (for example: question, response and response time)
     * You should use ``LogTrialData(DependentVarName, Values)`` where ``Values`` is a ``TArray<FString>`` with one entry per ``SubVariable``
     * The data to these is not stored in the ``Phase_[...].csv`` file but in a separate file ``Phase_[...]_[DependentVariableName].csv``
+    * ``LogTrialData`` can and should be called multiple times during the same condition, and each time the data is stored and (in contrast to ``USFDependenVariable``) nothing is overwritten.
     * In the Condition List (during execution) only the number of recorded trials is shown but not the data itself for better overview
 * This is the required study setup, but there are some more options there to explore.
 * ![image](uploads/ed698d70f2e68dfbc8c895cda36f56a5/image.png)\
