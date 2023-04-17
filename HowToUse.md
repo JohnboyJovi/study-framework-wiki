@@ -37,7 +37,7 @@ Dependent variables represent whatever you want to measure in each nondition (co
     * For these you should define ``SubVariableNames`` since you want to potentially store multiple values together for one trial (for example: question, response and response time)
     * You should use ``LogTrialData(DependentVarName, Values)`` where ``Values`` is a ``TArray<FString>`` with one entry per ``SubVariable``
     * The data to these is not stored in the ``Phase_[...].csv`` file but in a separate file ``Phase_[...]_[DependentVariableName].csv``
-    * In the Condition List only the number of recorded trial is shown but not the data itself for better overview
+    * In the Condition List (during execution) only the number of recorded trials is shown but not the data itself for better overview
 * This is the required study setup, but there are some more options there to explore.
 * ![image](uploads/ed698d70f2e68dfbc8c895cda36f56a5/image.png)\
 If you want to reorder phases just pull them (1) to another location, since new phases can only be added at the end. (Additionally, you can also rearrange them in the json file while the Editor is closed, it will be reloaded on startup)
