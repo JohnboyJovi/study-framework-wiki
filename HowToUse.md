@@ -34,7 +34,7 @@ Dependent variables represent whatever you want to measure in each nondition (co
     * which only take FString for values, so you have to convert it yourself. These are then logged and stored by the system. 
     * Calling these function multiple times for the same variable in the same condition will overwrite the value stored before.
   * If you want to store multiple results in one condition, e.g., because there are multiple trials, use ``USFMultipleTrialDependentVariable`` *(only available since version v1.1)*
-    * For these you should define ``SubVariableNames'' since you want to potentially store multiple values together for one trial (for example: question, response and response time)
+    * For these you should define ``SubVariableNames`` since you want to potentially store multiple values together for one trial (for example: question, response and response time)
     * You should use ``LogTrialData(DependentVarName, Values)`` where ``Values`` is a ``TArray<FString>`` with one entry per ``SubVariable``
     * The data to these is not stored in the ``Phase_[...].csv`` file but in a separate file ``Phase_[...]_[DependentVariableName].csv``
     * In the Condition List only the number of recorded trial is shown but not the data itself for better overview
