@@ -16,7 +16,7 @@ Below are different examples - in English only - you may use provided as XML fil
 - in case SSQ is too long and simulator sickness is not in focus, we recommend the short [Discomfort Score](uploads/62259e1d9c8819474b6422aaae5cf8a2/package_DiscomfortScore.xml) by [Fernandes et al.](https://www.doi.org/10.1109/3DUI.2016.7460053)
 
 **Presence in IVEs**
-- [Igroup Presence Questionnaire (IPQ)](uploads/85faf404124d694f949659adbb33b22b/package_igroupPresenceQuestionnaire.xml) ([German Version](uploads/29817b40f31d8a59704df34b13d1bf31/package_igroupPresenceQuestionnaire_German.xml) on Spatial Presence, Involvement, and Experienced Realism, see more [info here](http://www.igroup.org/pq/ipq/index.php)
+- [Igroup Presence Questionnaire (IPQ)](uploads/85faf404124d694f949659adbb33b22b/package_igroupPresenceQuestionnaire.xml) ([German Version](uploads/29817b40f31d8a59704df34b13d1bf31/package_igroupPresenceQuestionnaire_German.xml)) on Spatial Presence, Involvement, and Experienced Realism, see more [info here](http://www.igroup.org/pq/ipq/index.php)
 
 **Social Presence**
 - [Temple Presence Inventory (TPI)](uploads/cc699644d4d5bd8d9774d2ed78f7362e/package_TemplePresenceInventory.xml) by [Lombard et al.](http://matthewlombard.com/research/p2_ab.html) - Attention: this questionnaire rates different scales of (tele-)presence and our file currently only provides the subscales Social Richness, Engagement (mental immersion), and Social Presence - Actor Within Medium
