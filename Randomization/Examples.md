@@ -1242,7 +1242,7 @@ TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCond
 	{
 		int PickIndex = RNG.RandRange(0, ConditionsToShuffle.Num() - 1);
 		ShuffledConditions.Add(ConditionsToShuffle[PickIndex]);
-		AnswerOptions.RemoveAt(PickIndex);
+		ConditionsToShuffle.RemoveAt(PickIndex);
 	}
 
 	//put everything back together
