@@ -1200,8 +1200,59 @@ TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCond
 So here we moved the break phase to the point where two colors are done. 
 This callback function obviously also yields a lot more possibilities, just make sure that you take care for the counterbalancing when extensively using it.
 
+# ``ConditionSortingCallback()`` to manually shuffle all conditions in a phase randomly
 
+Sometimes the given randomization might not be enough, e.g., when you have a lot of conditions (e.g., 8x8 comparison tasks). Then you might want to simply shuffle all conditions in a phase randomly for each participants to avoid having emerging order patterns per participant.
 
+A possible code soulution in the ``ConditionSortingCallback()`` function could be:
+
+```c++
+TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCondition*>& Conditions, int ParticipantRunningNumber) const
+{
+	//first split the coditions:
+	TArray<USFCondition*> ConditionsBefore;
+	TArray<USFCondition*> ConditionsToShuffle;
+	TArray<USFCondition*> ConditionsAfter;
+	bool bFoundFirst = false;
+	for(USFCondition* Condition : Conditions)
+	{
+		if(Condition->PhaseName == "Decision")
+		{
+			bFoundFirst = true;
+			ConditionsToShuffle.Add(Condition);
+		}
+		else
+		{
+			if(!bFoundFirst)
+			{
+				ConditionsBefore.Add(Condition);
+			}
+			else
+			{
+				ConditionsAfter.Add(Condition);
+			}
+		}
+	}
+
+	//now shuffle the conditions:
+	TArray<USFCondition*> ShuffledConditions;
+	//seed a rnaom number generator with the participant's running number, so shuffling is predictable
+	FRandomStream RNG(ParticipantRunningNumber);
+	while(ConditionsToShuffle.Num() > 0) //while there are still unshuffled conditions
+	{
+		int PickIndex = RNG.RandRange(0, ConditionsToShuffle.Num() - 1);
+		ShuffledConditions.Add(ConditionsToShuffle[PickIndex]);
+		AnswerOptions.RemoveAt(PickIndex);
+	}
+
+	//put everything back together
+	TArray<USFCondition*> ReorderedConditions= ConditionsBefore;
+	ReorderedConditions.Append(ShuffledConditions)
+	ReorderedConditions.Append(ConditionsAfter)
+
+	return ReorderedConditions;
+}
+```
 
 ---
 ---
