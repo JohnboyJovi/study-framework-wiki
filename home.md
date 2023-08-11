@@ -22,6 +22,7 @@ For information on how to use this, go to the [HowToUse-Section](HowToUse)
 * Write out run data and last participant in json
 * Start a map and be able to debug it directly
 * Run on different systems: desktop, HMD, CAVE (nDisplay not tested yet!)
+* Being able to recover from crashes (continue the study in the condition that was not finished)
 
 Here helpful information should be gathered.
 
