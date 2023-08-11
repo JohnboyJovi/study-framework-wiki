@@ -1246,7 +1246,7 @@ TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCond
 	}
 
 	//put everything back together
-	TArray<USFCondition*> ReorderedConditions= ConditionsBefore;
+	TArray<USFCondition*> ReorderedConditions = ConditionsBefore;
 	ReorderedConditions.Append(ShuffledConditions)
 	ReorderedConditions.Append(ConditionsAfter)
 
