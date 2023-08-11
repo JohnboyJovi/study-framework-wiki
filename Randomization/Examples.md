@@ -1236,7 +1236,7 @@ TArray<USFCondition*> AStudySetup::ConditionSortingCallback(const TArray<USFCond
 
 	//now shuffle the conditions:
 	TArray<USFCondition*> ShuffledConditions;
-	//seed a rnaom number generator with the participant's running number, so shuffling is predictable
+	//seed a random number generator with the participant's running number, so shuffling is predictable
 	FRandomStream RNG(ParticipantRunningNumber);
 	while(ConditionsToShuffle.Num() > 0) //while there are still unshuffled conditions
 	{
