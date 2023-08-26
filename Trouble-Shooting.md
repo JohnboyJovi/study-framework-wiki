@@ -4,6 +4,8 @@
 > Maybe the map overwrites the gamemode, open the ``World Settings`` on that map an check:<br>
     ![image](uploads/ccd972b6457aa6c348f9fc1df856be1a/image.png)<br>
      This should be ``None``
+<br>
+<br>
 
 * There are weird characters in my csv Phase log files, e.g.:<br>
 ![image](uploads/9bfe9b5e7837180dec2719a41571cc88/image.png)
@@ -29,3 +31,8 @@ for filename in os.listdir("./"):
 
 ```
 </blockquote>
+<br>
+<br>
+
+* I lost some data in the phase data tables due to whatever reasons during study execution.
+> Fortunately everything is logged redundantely also per participant, so you data can most probably be recovered (unless you clicked ``Restart Study`` which also cleans up those files). Here is a script that, when placed in the ``StudyFramework`` folder should do the trick. Maybe you need to adapt parts, since it was developed and tested for one specific study setup. SO CHECK YOUR DATA CAREFULLY! [ReconstructPhaseTablesFromParticipantLogs.py](uploads/a97f6c3b8caebd3c21b9ae6c903a6314/ReconstructPhaseTablesFromParticipantLogs.py)
