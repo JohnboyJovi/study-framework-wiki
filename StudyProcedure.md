@@ -13,7 +13,7 @@ When it comes to planning a user study various steps need to be executed, summar
 - How many participants do you need? Do they need to be experts in a certain field or do they need to be novice users?
 - When do you want to conduct your study?
 - How is the concrete study procedure?
-
+- Do we have funding to pay participants? In this case contact finanzen@itc.rwth-aachen.de to setup the "Werksvertrag", you get the money transferred and also a specific Quittungsliste which every participant has to sign (twice). 
 
 **Study Procedure**
 
