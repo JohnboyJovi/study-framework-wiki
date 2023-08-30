@@ -10,6 +10,7 @@ This is an example of an invitation mail text. Feel free to adapt it to your nee
 > For our convenience, please cast your vote to the earliest available timeslots possible, and don't forget to hit the submit button on the very far right of the page (horizontal scrolling required).
 > 
 > The requirements for participation are:
+> - {+ Being 18 years or older +}
 > - Fluently speaking and understanding English
 > - Being able to stand unaided for up to {+ ____ +} minutes
 > - Normal depths vision
@@ -27,6 +28,8 @@ This is an example of an invitation mail text. Feel free to adapt it to your nee
 > Best regards, 
 > {+ XXX +}
 
+
+Attention: Participants under the age of 18 are - in general - permitted as well, but only with parental involvement! Even for students as young as 17, parents must sign the Informed Consent and the Study Description for their minor child in advance, while the participants sign the same document as well. Regarding participant compensation, it's crucial to note that minors, as per §106 BGB, cannot validly acknowledge fund receipt, which is however required by the university if you provide compensation. To circumvent this, our legal department (precisely: Ewa Seuffert, Rechtanwältin, Dezernat 9.0 - Recht, 28.08.2023) suggests a simple solution: appending a pre-approval statement to the Informed Consent or Study Description. This statement, signed by parents in advance, greenlights fund payment and acknowledgment by the minor participant. While this entails added effort, we recommend prioritizing participants aged 18 and above to streamline the process.
 
 In case arranging the appointment and actually participating in the study are far apart in time, we recommend a reminder mail, such as the following:
 
