@@ -103,3 +103,6 @@ In general, you should check perform performing paramteric test (like ANOVA or t
 
 * A German extensive book about statistics (including a lot of hypotheses testing and some R examples): [AngewandteStatistikBuch.pdf](uploads/75c2870060115d3ec2b6aa4e6555f81f/AngewandteStatistikBuch.pdf)
 * A general book about study design (also containing a longer section about statistics): [Experimental_Design_From_User_Studies_to_Psychophysics.pdf](uploads/513f842a02ad2b740f59a7a46e761dbf/Experimental_Design_From_User_Studies_to_Psychophysics.pdf)
+* Data in R: https://moderndive.com/1-getting-started.html
+* Introduction to Linear Mixed Models (Alternative to ANOVAS etc.): https://ourcodingclub.github.io/tutorials/mixed-models/
+* Annotations in facets in plots: https://www.r-bloggers.com/2018/11/adding-different-annotation-to-each-facet-in-ggplot/
