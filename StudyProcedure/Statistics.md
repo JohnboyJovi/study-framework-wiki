@@ -95,6 +95,47 @@ In general, you should check perform performing paramteric test (like ANOVA or t
 
 # Plotting your data
 
+``ggpubr`` is a very versatile tool to generate nice looking plots in R (see, e.g., https://rpkgs.datanovia.com/ggpubr/)
+
+<details><summary>Here is some example code how to create bar plots which are very configurable</summary>
+
+```r
+library(dplyr)
+library(ggpubr)
+
+library(showtext)
+font_families()
+
+ActDataGaps$TurnTaking <- recode_factor(ActDataGaps$TurnTaking, None = "None", 
+InhaleOnly = "Breath", GestureOnly = "Gesture", GazeOnly = "Gaze", Full = "Full")
+
+ActGaps_table <- ActDataGaps %>% 
+  group_by(TurnTaking) %>% 
+  get_summary_stats(GapTimes, type = "mean_se")
+
+plot <- ggplot(ActGaps_table, aes(x=TurnTaking, fill=TurnTaking, y = mean*1000)) + 
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  geom_errorbar(aes(ymin=1000*(mean-se), ymax=1000*(mean+se)), width=.3) +
+  geom_signif(comparisons = list(c("Breath", "Gesture"),c("Breath", "Full")), annotation = c("*","**"), y_position = c(1000, 1100)) +
+  xlab("Turn-Taking Cues") + ylab("Gap Length [ms]") +
+  ylim(0, 1200) + 
+  theme_light() +
+  theme( text=element_text(size=8, family="serif"), 
+         axis.text.x = element_text(size = 5),
+         axis.text.y = element_text(size = 5, angle = 45)) + 
+  scale_fill_manual(values = c("#868686", "#0073c2", "#efc000", "#cd534c", "#7aa6dc"))
+print(plot)
+ggsave("plots/Act-Gaps.pdf", width = 4.235, height = 6, units = "cm")
+```
+
+This script creates this graph:<br>
+![image](uploads/48140956d276ed3e3dec21f9050da67e/image.png){width=300px}<br>
+which could ne directly included in a Latex document with column width 4.235 cm.
+
+</details>
+
+
+
 
 
 
