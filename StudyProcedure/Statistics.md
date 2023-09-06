@@ -15,3 +15,4 @@ If you gathered demogrpahic data, e.g., with SoSciSurvey, you should report who 
 # Further Reading
 
 * A German extensive book about statistics (including a lot of hypotheses testing and some R examples): [AngewandteStatistikBuch.pdf](uploads/75c2870060115d3ec2b6aa4e6555f81f/AngewandteStatistikBuch.pdf)
+* A general book about study design (also containing a longer section about statistics): [Experimental_Design_From_User_Studies_to_Psychophysics.pdf](uploads/513f842a02ad2b740f59a7a46e761dbf/Experimental_Design_From_User_Studies_to_Psychophysics.pdf)
