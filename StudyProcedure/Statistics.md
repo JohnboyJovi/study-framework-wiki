@@ -87,7 +87,13 @@ ActData <- filter(ActData, ! ParticipantID %in% excludedParticipants)
 
 Normally you want to use the gathered data to proof that a factor you evaluated has a significant effect on the outcome.
 
-For this I recommend the following article on how to apply repeated-measures ANOVAs in R, 
+For this I recommend the following article on how to apply repeated-measures ANOVAs in R: https://www.datanovia.com/en/lessons/repeated-measures-anova-in-r/
+
+In general, you should check perform performing paramteric test (like ANOVA or t-tests) that your data is actually normally distributed and fullfills the requirements (see website above) and otherwise use a non-parametric test should be used (*text books have an exclusion for this for large numbers (Central Limit Theorem), which often refers to 30 being a large enough number*). Otherweise check this graph for which tests might be useful (taken from the second book under Further Reading):<br>
+![image](uploads/38d6fe059e5966411b0de20f3c478f9c/image.png){width=500px}
+
+
+# Plotting your data
 
 
 
