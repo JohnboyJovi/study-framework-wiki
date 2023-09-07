@@ -40,3 +40,6 @@ After you designed your study it is time to set it up. The following section wil
     - Decide whether you need a structured or semi-structured interview (probably in the end) to gain more insight or if the questionnaires are sufficient.
 8. Debriefing
     - After finishing the study, you can and should tell participants what the focus of your study was. However, make sure that they are aware that this information should not be disclosed to people who might still want to participate in the study, to avoid any bias.
+
+**Study Evaluation**
+Some ideas on how to evaluate your gathered data and what tools to use can be found in the [Statistics section](StudyProcedure/Statistics)
