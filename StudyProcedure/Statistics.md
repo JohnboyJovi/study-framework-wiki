@@ -4,7 +4,7 @@ Here are some hints and ideas how to evaluate the gathered data.
 
 One possibility is to use RStudio. (Install r: https://cran.rstudio.com/, and then install RStudio: https://posit.co/download/rstudio-desktop/)
 
-All of the scripts below are for RStudio, but for example also *jamovi* (https://www.jamovi.org/) can be used (which provides most functionality for statistic tests in a simple GUI, but not so versatile for plotting).
+All of the scripts below are for RStudio, but for example also *jamovi* (https://www.jamovi.org/) can be used (which provides most functionality for statistic tests in a simple GUI, but is not so versatile for plotting).
 
 # Demographics
 
