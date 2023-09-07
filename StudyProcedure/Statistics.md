@@ -142,8 +142,8 @@ which could ne directly included in a Latex document with column width 4.235 cm.
 
 # Further Reading
 
-* A German extensive book about statistics (including a lot of hypotheses testing and some R examples): [AngewandteStatistikBuch.pdf](uploads/75c2870060115d3ec2b6aa4e6555f81f/AngewandteStatistikBuch.pdf)
-* A general book about study design (also containing a longer section about statistics): [Experimental_Design_From_User_Studies_to_Psychophysics.pdf](uploads/513f842a02ad2b740f59a7a46e761dbf/Experimental_Design_From_User_Studies_to_Psychophysics.pdf)
+* A German extensive book about statistics (including a lot of hypotheses testing and some R examples): [Angewandte Statistik by Hedderich & Sachs](https://link.springer.com/book/10.1007/978-3-662-62294-0)
+* A general book about study design (also containing a longer section about statistics): Experimental Design: From User Studies to Psychophysics](https://www.taylorfrancis.com/books/mono/10.1201/b11308/experimental-design-douglas-cunningham-christian-wallraven)
 * Data in R: https://moderndive.com/1-getting-started.html
 * Introduction to Linear Mixed Models (Alternative to ANOVAS etc.): https://ourcodingclub.github.io/tutorials/mixed-models/
 * Annotations in facets in plots: https://www.r-bloggers.com/2018/11/adding-different-annotation-to-each-facet-in-ggplot/
