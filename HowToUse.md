@@ -3,7 +3,7 @@
 ## Prepare Project
 * First of all get the StudyFramework as Plugin into you project, e.g., using the setup script of the [RWTH VR Project Template](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/unrealprojecttemplate), this plugin also requires the following plugins:
   * [``RWTH VR Toolkit``](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/plugins/rwth-vr-toolkit)
-  * [``Universal Logging``](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/plugins/universallogging)
+  * [``Universal Logging``](https://devhub.vr.rwth-aachen.de/VR-Group/unreal-development/plugins/universallogging) (not needed from v1 on, but recommended for simplicity)
 * Set game instance (``Settings -> Project Settings -> Maps&Modes``) to ``SFGameInstance``
 * Set game mode (``Settings -> Project Settings -> Maps&Modes``) Set to ``SFGameMode``
 * Potentially set the mouse to not be captured to use the UI (``Settings --> Project Settings --> Input --> Default Viewport Mouse Capture Mode = No Capture``), **should however not be necessary when using the latest ``RWTH VR Toolkit`` version.**
