@@ -195,7 +195,6 @@ If you want to have, e.g., always the same colored repetition next to each other
 
 
 # Using ``InOrder`` (potentially for multiple factors but order matters since nested factors are not globally in order)
-``InOrder``
 
 * Color: {🟠, 🔵, 🟢} (``Mixing Order: InOrder``)
 * Number: {1, 2} (``Mixing Order: InOrder``)
