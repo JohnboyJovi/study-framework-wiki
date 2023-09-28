@@ -410,7 +410,7 @@ If you want to have, e.g., always the same colored repetition next to each other
 | 6 | 🟠 1 a | 🟠 1 b | 🟠 2 b | 🟠 2 a | 🔵 1 b | 🔵 1 a | 🔵 2 a | 🔵 2 b | 🟢 1 a | 🟢 1 b | 🟢 2 b | 🟢 2 a |
 | ... |
 
-# ``NonCombined``: Adding randomness without creating aditional conditions
+# ``NonCombined``: Adding randomness without creating additional conditions
 If the letter in the above example should simply add some randomness ut not increase the combinatorical blowup, ``NonCombined`` can be used. This means that all combination of ``Color`` and ``Number`` are produced, but not all combinations ``Letter`` with those.
 
 * Color: {🟠, 🔵, 🟢} (``Mixing Order: EnBlock``)
