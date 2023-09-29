@@ -23,7 +23,3 @@ For information on how to use this, go to the [HowToUse-Section](HowToUse)
 * Start a map and be able to debug it directly
 * Run on different systems: desktop, HMD, CAVE (nDisplay not tested yet!)
 * Being able to recover from crashes (continue the study in the condition that was not finished)
-
-Here helpful information should be gathered.
-
-[Meeting Minutes](meeting-minutes)
