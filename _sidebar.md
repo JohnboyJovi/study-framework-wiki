@@ -9,6 +9,7 @@
 * [Trouble Shooting (FAQ)](Trouble Shooting)
 
 ===========================
+\hline
 
 [Study Procedure](StudyProcedure)
 * [Explaining Texts](StudyProcedure/Explaining Texts)
