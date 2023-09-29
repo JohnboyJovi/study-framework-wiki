@@ -1,4 +1,5 @@
 [StudyFramework Home](Home)
+
 [General How-to-Use](HowToUse)
 * [Logging](Logging)
 * [Randomization](Randomization)
