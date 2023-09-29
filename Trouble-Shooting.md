@@ -1,5 +1,11 @@
 **Here is a collection of problems that might occur and how to potentially solve them. Please add new insights ;-)**
 
+* In HMD mode the screen stays black every now and then without a HUD:
+> This is a known bug, you need to always close the application using ``Esc`` or the ``End Study``-Button. If you use the :x: of the window, this will happen every second time<br>There is an issue collecting forther information on this: #60 
+
+<br>
+<br>
+
 * On one of my maps the study experimentor overlay is not shown:
 > Maybe the map overwrites the gamemode, open the ``World Settings`` on that map an check:<br>
     ![image](uploads/ccd972b6457aa6c348f9fc1df856be1a/image.png)<br>
