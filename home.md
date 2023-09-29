@@ -7,8 +7,11 @@ User studies are a non-trivial, but essential part of our research. After you ca
 * Have similar data for different studies (facilitating meta-analyses and sharing analysis tools)
 * Do **not** overengineer
 
-For information on how to use this, go to the [HowToUse-Section](HowToUse)
+For information on how to use this, go to:
 
+The [HowToUse-Section](HowToUse)
+
+Additional information:
 - [What is logged and where?](Logging)
 - [What are all these classes?](Architecture)
 - [How can I use eye tracking](EyeTracking)
