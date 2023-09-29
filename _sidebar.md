@@ -11,4 +11,4 @@
 ===========================
 
 [Study Procedure](StudyProcedure)
-* [Explaining Texts](ExplainingsTexts)
+* [Explaining Texts](Explainings Texts)
