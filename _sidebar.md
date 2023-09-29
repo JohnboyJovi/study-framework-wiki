@@ -12,7 +12,7 @@
 
 [Study Procedure](StudyProcedure)
 * [Explaining Texts](StudyProcedure/Explaining Texts)
-* [Informed Consent](StudyProcedure/Informed Consent)
-* [Invitation Mail](StudyProcedure/Informed Consent)
+* [Informed Consent](StudyProcedure/Informed Content)
+* [Invitation Mail](StudyProcedure/Invitation Mail)
 * [Questionnaires](StudyProcedure/Questionnaires)
 * [Statistics](StudyProcedure/Statistics)
