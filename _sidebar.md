@@ -6,7 +6,7 @@
   * [Examples](Randomization/Examples)
 * [Eye Tracking](EyeTracking)
 * [Architecture](Architecture)
-* [Trouble Shooting (FAQ)](TroubleShooting)
+* [Trouble Shooting (FAQ)](Trouble Shooting)
 
 ===========================
 
