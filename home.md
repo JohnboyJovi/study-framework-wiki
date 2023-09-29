@@ -8,9 +8,7 @@ User studies are a non-trivial, but essential part of our research. After you ca
 * Do **not** overengineer
 
 For information on how to use this, go to:
-
 The [HowToUse-Section](HowToUse)
-
 Additional information:
 - [What is logged and where?](Logging)
 - [What are all these classes?](Architecture)
